@@ -1,0 +1,62 @@
+E:\C# (Proj 08)\Shoppee_Mini_Project\Shoppee_Mini_Project\Shoppee_Mini_Project\bin\Debug\Shoppee_Mini_Project.exe
+E:\C# (Proj 08)\Shoppee_Mini_Project\Shoppee_Mini_Project\Shoppee_Mini_Project\bin\Debug\Shoppee_Mini_Project.pdb
+E:\C# (Proj 08)\Shoppee_Mini_Project\Shoppee_Mini_Project\Shoppee_Mini_Project\obj\x86\Debug\Shoppee_Mini_Project.frm_Add_New_Customer.resources
+E:\C# (Proj 08)\Shoppee_Mini_Project\Shoppee_Mini_Project\Shoppee_Mini_Project\obj\x86\Debug\Shoppee_Mini_Project.frm_Add_New_Product.resources
+E:\C# (Proj 08)\Shoppee_Mini_Project\Shoppee_Mini_Project\Shoppee_Mini_Project\obj\x86\Debug\Shoppee_Mini_Project.frm_Main_Form.resources
+E:\C# (Proj 08)\Shoppee_Mini_Project\Shoppee_Mini_Project\Shoppee_Mini_Project\obj\x86\Debug\Shoppee_Mini_Project.frm_Login.resources
+E:\C# (Proj 08)\Shoppee_Mini_Project\Shoppee_Mini_Project\Shoppee_Mini_Project\obj\x86\Debug\Shoppee_Mini_Project.frm_Product_Menu.resources
+E:\C# (Proj 08)\Shoppee_Mini_Project\Shoppee_Mini_Project\Shoppee_Mini_Project\obj\x86\Debug\Shoppee_Mini_Project.frm_Update_Product.resources
+E:\C# (Proj 08)\Shoppee_Mini_Project\Shoppee_Mini_Project\Shoppee_Mini_Project\obj\x86\Debug\Shoppee_Mini_Project.frm_View_Product_List.resources
+E:\C# (Proj 08)\Shoppee_Mini_Project\Shoppee_Mini_Project\Shoppee_Mini_Project\obj\x86\Debug\Shoppee_Mini_Project.Properties.Resources.resources
+E:\C# (Proj 08)\Shoppee_Mini_Project\Shoppee_Mini_Project\Shoppee_Mini_Project\obj\x86\Debug\Shoppee_Mini_Project.csproj.GenerateResource.Cache
+E:\C# (Proj 08)\Shoppee_Mini_Project\Shoppee_Mini_Project\Shoppee_Mini_Project\obj\x86\Debug\Shoppee_Mini_Project.exe
+E:\C# (Proj 08)\Shoppee_Mini_Project\Shoppee_Mini_Project\Shoppee_Mini_Project\obj\x86\Debug\Shoppee_Mini_Project.pdb
+F:\C# (Proj 08)\SHOPPE MINI PROJECT - FORK\Shoppee_Mini_Project\Shoppee_Mini_Project\obj\x86\Debug\Shoppee_Mini_Project.exe
+F:\C# (Proj 08)\SHOPPE MINI PROJECT - FORK\Shoppee_Mini_Project\Shoppee_Mini_Project\obj\x86\Debug\Shoppee_Mini_Project.pdb
+F:\C# (Proj 08)\SHOPPE MINI PROJECT - FORK\Shoppee_Mini_Project\Shoppee_Mini_Project\bin\Debug\Shoppee_Mini_Project.exe
+F:\C# (Proj 08)\SHOPPE MINI PROJECT - FORK\Shoppee_Mini_Project\Shoppee_Mini_Project\bin\Debug\Shoppee_Mini_Project.pdb
+F:\C# (Proj 08)\SHOPPE MINI PROJECT - FORK\Shoppee_Mini_Project\Shoppee_Mini_Project\obj\x86\Debug\Shoppee_Mini_Project.frm_Add_New_Customer.resources
+F:\C# (Proj 08)\SHOPPE MINI PROJECT - FORK\Shoppee_Mini_Project\Shoppee_Mini_Project\obj\x86\Debug\Shoppee_Mini_Project.frm_Add_New_Product.resources
+F:\C# (Proj 08)\SHOPPE MINI PROJECT - FORK\Shoppee_Mini_Project\Shoppee_Mini_Project\obj\x86\Debug\Shoppee_Mini_Project.frm_Main_Form.resources
+F:\C# (Proj 08)\SHOPPE MINI PROJECT - FORK\Shoppee_Mini_Project\Shoppee_Mini_Project\obj\x86\Debug\Shoppee_Mini_Project.frm_Login.resources
+F:\C# (Proj 08)\SHOPPE MINI PROJECT - FORK\Shoppee_Mini_Project\Shoppee_Mini_Project\obj\x86\Debug\Shoppee_Mini_Project.frm_Product_Menu.resources
+F:\C# (Proj 08)\SHOPPE MINI PROJECT - FORK\Shoppee_Mini_Project\Shoppee_Mini_Project\obj\x86\Debug\Shoppee_Mini_Project.frm_Update_Product.resources
+F:\C# (Proj 08)\SHOPPE MINI PROJECT - FORK\Shoppee_Mini_Project\Shoppee_Mini_Project\obj\x86\Debug\Shoppee_Mini_Project.frm_View_Product_List.resources
+F:\C# (Proj 08)\SHOPPE MINI PROJECT - FORK\Shoppee_Mini_Project\Shoppee_Mini_Project\obj\x86\Debug\Shoppee_Mini_Project.Properties.Resources.resources
+F:\C# (Proj 08)\SHOPPE MINI PROJECT - FORK\Shoppee_Mini_Project\Shoppee_Mini_Project\obj\x86\Debug\Shoppee_Mini_Project.csproj.GenerateResource.Cache
+F:\C# (Proj 08)\SHOPPE MINI PROJECT - FORK\Shoppee_Mini_Project\Shoppee_Mini_Project\bin\Debug\Shoppee_Mini_Project.exe.config
+F:\C# (Proj 08)\New Mini Shoppe Project April 2022\Shoppee_Mini_Project\Shoppee_Mini_Project\bin\Debug\Shoppee_Mini_Project.exe.config
+F:\C# (Proj 08)\New Mini Shoppe Project April 2022\Shoppee_Mini_Project\Shoppee_Mini_Project\obj\x86\Debug\Shoppee_Mini_Project.exe
+F:\C# (Proj 08)\New Mini Shoppe Project April 2022\Shoppee_Mini_Project\Shoppee_Mini_Project\obj\x86\Debug\Shoppee_Mini_Project.pdb
+F:\C# (Proj 08)\New Mini Shoppe Project April 2022\Shoppee_Mini_Project\Shoppee_Mini_Project\obj\x86\Debug\Shoppee_Mini_Project.frm_Add_New_Customer.resources
+F:\C# (Proj 08)\New Mini Shoppe Project April 2022\Shoppee_Mini_Project\Shoppee_Mini_Project\obj\x86\Debug\Shoppee_Mini_Project.frm_Add_New_Product.resources
+F:\C# (Proj 08)\New Mini Shoppe Project April 2022\Shoppee_Mini_Project\Shoppee_Mini_Project\obj\x86\Debug\Shoppee_Mini_Project.frm_Customer_Menu.resources
+F:\C# (Proj 08)\New Mini Shoppe Project April 2022\Shoppee_Mini_Project\Shoppee_Mini_Project\obj\x86\Debug\Shoppee_Mini_Project.frm_Main_Form.resources
+F:\C# (Proj 08)\New Mini Shoppe Project April 2022\Shoppee_Mini_Project\Shoppee_Mini_Project\obj\x86\Debug\Shoppee_Mini_Project.frm_Login.resources
+F:\C# (Proj 08)\New Mini Shoppe Project April 2022\Shoppee_Mini_Project\Shoppee_Mini_Project\obj\x86\Debug\Shoppee_Mini_Project.frm_Product_Menu.resources
+F:\C# (Proj 08)\New Mini Shoppe Project April 2022\Shoppee_Mini_Project\Shoppee_Mini_Project\obj\x86\Debug\Shoppee_Mini_Project.frm_Update_Product.resources
+F:\C# (Proj 08)\New Mini Shoppe Project April 2022\Shoppee_Mini_Project\Shoppee_Mini_Project\obj\x86\Debug\Shoppee_Mini_Project.frm_View_Product_List.resources
+F:\C# (Proj 08)\New Mini Shoppe Project April 2022\Shoppee_Mini_Project\Shoppee_Mini_Project\obj\x86\Debug\Shoppee_Mini_Project.Properties.Resources.resources
+F:\C# (Proj 08)\New Mini Shoppe Project April 2022\Shoppee_Mini_Project\Shoppee_Mini_Project\obj\x86\Debug\Shoppee_Mini_Project.frm_View_Single_Customer_Details.resources
+F:\C# (Proj 08)\New Mini Shoppe Project April 2022\Shoppee_Mini_Project\Shoppee_Mini_Project\obj\x86\Debug\Shoppee_Mini_Project.csproj.GenerateResource.Cache
+F:\C# (Proj 08)\New Mini Shoppe Project April 2022\Shoppee_Mini_Project\Shoppee_Mini_Project\bin\Debug\Shoppee_Mini_Project.exe
+F:\C# (Proj 08)\New Mini Shoppe Project April 2022\Shoppee_Mini_Project\Shoppee_Mini_Project\bin\Debug\Shoppee_Mini_Project.pdb
+E:\C#\Mini Projects\Shoppee_Mini_Project\Shoppee_Mini_Project\bin\Debug\Shoppee_Mini_Project.exe.config
+E:\C#\Mini Projects\Shoppee_Mini_Project\Shoppee_Mini_Project\obj\x86\Debug\Shoppee_Mini_Project.exe
+E:\C#\Mini Projects\Shoppee_Mini_Project\Shoppee_Mini_Project\obj\x86\Debug\Shoppee_Mini_Project.pdb
+E:\C#\Mini_Projects\Shoppee_Mini_Project\Shoppee_Mini_Project\bin\Debug\Shoppee_Mini_Project.exe.config
+E:\C#\Mini_Projects\Shoppee_Mini_Project\Shoppee_Mini_Project\obj\x86\Debug\Shoppee_Mini_Project.exe
+E:\C#\Mini_Projects\Shoppee_Mini_Project\Shoppee_Mini_Project\obj\x86\Debug\Shoppee_Mini_Project.pdb
+E:\C#\Mini_Projects\Shoppee_Mini_Project\Shoppee_Mini_Project\bin\Debug\Shoppee_Mini_Project.exe
+E:\C#\Mini_Projects\Shoppee_Mini_Project\Shoppee_Mini_Project\bin\Debug\Shoppee_Mini_Project.pdb
+E:\C#\Mini_Projects\Shoppee_Mini_Project\Shoppee_Mini_Project\obj\x86\Debug\Shoppee_Mini_Project.frm_Add_New_Customer.resources
+E:\C#\Mini_Projects\Shoppee_Mini_Project\Shoppee_Mini_Project\obj\x86\Debug\Shoppee_Mini_Project.frm_Add_New_Product.resources
+E:\C#\Mini_Projects\Shoppee_Mini_Project\Shoppee_Mini_Project\obj\x86\Debug\Shoppee_Mini_Project.frm_Customer_Menu.resources
+E:\C#\Mini_Projects\Shoppee_Mini_Project\Shoppee_Mini_Project\obj\x86\Debug\Shoppee_Mini_Project.frm_Main_Form.resources
+E:\C#\Mini_Projects\Shoppee_Mini_Project\Shoppee_Mini_Project\obj\x86\Debug\Shoppee_Mini_Project.frm_Login.resources
+E:\C#\Mini_Projects\Shoppee_Mini_Project\Shoppee_Mini_Project\obj\x86\Debug\Shoppee_Mini_Project.frm_Product_Menu.resources
+E:\C#\Mini_Projects\Shoppee_Mini_Project\Shoppee_Mini_Project\obj\x86\Debug\Shoppee_Mini_Project.frm_Update_Product.resources
+E:\C#\Mini_Projects\Shoppee_Mini_Project\Shoppee_Mini_Project\obj\x86\Debug\Shoppee_Mini_Project.frm_View_Product_List.resources
+E:\C#\Mini_Projects\Shoppee_Mini_Project\Shoppee_Mini_Project\obj\x86\Debug\Shoppee_Mini_Project.Properties.Resources.resources
+E:\C#\Mini_Projects\Shoppee_Mini_Project\Shoppee_Mini_Project\obj\x86\Debug\Shoppee_Mini_Project.frm_View_Single_Customer_Details.resources
+E:\C#\Mini_Projects\Shoppee_Mini_Project\Shoppee_Mini_Project\obj\x86\Debug\Shoppee_Mini_Project.csproj.GenerateResource.Cache
