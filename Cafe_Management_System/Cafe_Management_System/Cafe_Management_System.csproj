@@ -60,6 +60,12 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UC_Banner.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC_Banner.Designer.cs">
+      <DependentUpon>UC_Banner.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="frm_DashBoard.resx">
       <DependentUpon>frm_DashBoard.cs</DependentUpon>
     </EmbeddedResource>
@@ -75,6 +81,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="UC_Banner.resx">
+      <DependentUpon>UC_Banner.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

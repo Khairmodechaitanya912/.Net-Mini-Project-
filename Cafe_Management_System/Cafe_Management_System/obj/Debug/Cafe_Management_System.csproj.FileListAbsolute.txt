@@ -9,3 +9,4 @@ E:\Internship\C#\Project\Cafe_Management_System\Cafe_Management_System\obj\Debug
 E:\Internship\C#\Project\Cafe_Management_System\Cafe_Management_System\obj\Debug\Cafe_Management_System.exe
 E:\Internship\C#\Project\Cafe_Management_System\Cafe_Management_System\obj\Debug\Cafe_Management_System.pdb
 E:\Internship\C#\Project\Cafe_Management_System\Cafe_Management_System\obj\Debug\Cafe_Management_System.frm_DashBoard.resources
+E:\Internship\C#\Project\Cafe_Management_System\Cafe_Management_System\obj\Debug\Cafe_Management_System.UC_Banner.resources

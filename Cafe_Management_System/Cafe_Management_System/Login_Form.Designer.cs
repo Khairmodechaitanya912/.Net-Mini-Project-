@@ -96,7 +96,7 @@ namespace Cafe_Management_System
             // btn_Sign_In
             // 
             this.btn_Sign_In.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(131)))), ((int)(((byte)(241)))));
-            this.btn_Sign_In.Font = new System.Drawing.Font("Segoe Print", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Sign_In.Font = new System.Drawing.Font("Segoe Print", 14.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_Sign_In.Location = new System.Drawing.Point(86, 469);
             this.btn_Sign_In.Name = "btn_Sign_In";
             this.btn_Sign_In.Size = new System.Drawing.Size(199, 50);
@@ -108,11 +108,11 @@ namespace Cafe_Management_System
             // llbl_Continue_As_Guest
             // 
             this.llbl_Continue_As_Guest.AutoSize = true;
-            this.llbl_Continue_As_Guest.Font = new System.Drawing.Font("Monotype Corsiva", 10.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.llbl_Continue_As_Guest.Font = new System.Drawing.Font("Monotype Corsiva", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.llbl_Continue_As_Guest.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(176)))), ((int)(((byte)(71)))));
-            this.llbl_Continue_As_Guest.Location = new System.Drawing.Point(111, 545);
+            this.llbl_Continue_As_Guest.Location = new System.Drawing.Point(109, 545);
             this.llbl_Continue_As_Guest.Name = "llbl_Continue_As_Guest";
-            this.llbl_Continue_As_Guest.Size = new System.Drawing.Size(142, 20);
+            this.llbl_Continue_As_Guest.Size = new System.Drawing.Size(156, 24);
             this.llbl_Continue_As_Guest.TabIndex = 7;
             this.llbl_Continue_As_Guest.TabStop = true;
             this.llbl_Continue_As_Guest.Text = "Continue As Guest";

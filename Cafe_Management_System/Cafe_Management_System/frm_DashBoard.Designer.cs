@@ -38,10 +38,9 @@ namespace Cafe_Management_System
             this.btn_Add_Item = new System.Windows.Forms.Button();
             this.btn_Place_Order = new System.Windows.Forms.Button();
             this.pnl_Right_Manu = new System.Windows.Forms.Panel();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.uC_Banner1 = new Cafe_Management_System.UC_Banner();
             this.pnl_Left_Manu.SuspendLayout();
             this.pnl_Right_Manu.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // pnl_Left_Manu
@@ -140,21 +139,20 @@ namespace Cafe_Management_System
             // pnl_Right_Manu
             // 
             this.pnl_Right_Manu.BackColor = System.Drawing.Color.White;
-            this.pnl_Right_Manu.Controls.Add(this.pictureBox1);
+            this.pnl_Right_Manu.Controls.Add(this.uC_Banner1);
             this.pnl_Right_Manu.Location = new System.Drawing.Point(332, 18);
             this.pnl_Right_Manu.Name = "pnl_Right_Manu";
             this.pnl_Right_Manu.Size = new System.Drawing.Size(1006, 735);
             this.pnl_Right_Manu.TabIndex = 1;
             // 
-            // pictureBox1
+            // uC_Banner1
             // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(0, 2);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(1004, 444);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
+            this.uC_Banner1.BackColor = System.Drawing.Color.White;
+            this.uC_Banner1.ForeColor = System.Drawing.Color.Coral;
+            this.uC_Banner1.Location = new System.Drawing.Point(0, -6);
+            this.uC_Banner1.Name = "uC_Banner1";
+            this.uC_Banner1.Size = new System.Drawing.Size(1006, 735);
+            this.uC_Banner1.TabIndex = 0;
             // 
             // frm_DashBoard
             // 
@@ -171,7 +169,6 @@ namespace Cafe_Management_System
             this.pnl_Left_Manu.ResumeLayout(false);
             this.pnl_Left_Manu.PerformLayout();
             this.pnl_Right_Manu.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -181,11 +178,11 @@ namespace Cafe_Management_System
         private System.Windows.Forms.Panel pnl_Left_Manu;
         private System.Windows.Forms.Panel pnl_Right_Manu;
         private System.Windows.Forms.Button btn_Place_Order;
-        private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button btn_Remove_Item;
         private System.Windows.Forms.Button btn_Update_Item;
         private System.Windows.Forms.Button btn_Add_Item;
         private System.Windows.Forms.LinkLabel llbl_Logout;
         private System.Windows.Forms.Button btn_Close;
+        private UC_Banner uC_Banner1;
     }
 }
