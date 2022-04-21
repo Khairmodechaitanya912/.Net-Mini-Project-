@@ -21,19 +21,19 @@ namespace Cafe_Management_System
         {
             if (T == 0)
             {
-                lbl_Title.Location = new Point(3, 506);
-                lbl_Title.ForeColor = Color.AntiqueWhite;
+                lbl_Title.Location = new Point(3, 400);
+                lbl_Title.ForeColor = Color.HotPink;
                 T++;
             }
             else if (T == 1)
             {
-                lbl_Title.Location = new Point(242, 515);
-                lbl_Title.ForeColor = Color.MistyRose;
+                lbl_Title.Location = new Point(200, 515);
+                lbl_Title.ForeColor = Color.Lime;
                 T++;
             }
             else if (T == 2)
             {
-                lbl_Title.Location = new Point(510, 524);
+                lbl_Title.Location = new Point(350, 400);
                 lbl_Title.ForeColor = Color.DeepSkyBlue;
                 T = 0;
             }

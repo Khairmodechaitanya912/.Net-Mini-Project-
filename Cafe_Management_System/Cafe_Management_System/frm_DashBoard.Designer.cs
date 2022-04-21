@@ -38,7 +38,11 @@ namespace Cafe_Management_System
             this.btn_Add_Item = new System.Windows.Forms.Button();
             this.btn_Place_Order = new System.Windows.Forms.Button();
             this.pnl_Right_Manu = new System.Windows.Forms.Panel();
+            this.uC_Update_Item1 = new Cafe_Management_System.All_User_Controls.UC_Update_Item();
+            this.uC_Place_Order1 = new Cafe_Management_System.All_User_Controls.UC_Place_Order();
+            this.uC_Add_Item1 = new Cafe_Management_System.All_User_Controls.UC_Add_Item();
             this.uC_Banner1 = new Cafe_Management_System.UC_Banner();
+            this.remove_Item1 = new Cafe_Management_System.All_User_Controls.Remove_Item();
             this.pnl_Left_Manu.SuspendLayout();
             this.pnl_Right_Manu.SuspendLayout();
             this.SuspendLayout();
@@ -95,6 +99,7 @@ namespace Cafe_Management_System
             this.btn_Remove_Item.TabIndex = 3;
             this.btn_Remove_Item.Text = "Remove Item";
             this.btn_Remove_Item.UseVisualStyleBackColor = false;
+            this.btn_Remove_Item.Click += new System.EventHandler(this.btn_Remove_Item_Click);
             // 
             // btn_Update_Item
             // 
@@ -108,6 +113,7 @@ namespace Cafe_Management_System
             this.btn_Update_Item.TabIndex = 2;
             this.btn_Update_Item.Text = "Update Item";
             this.btn_Update_Item.UseVisualStyleBackColor = false;
+            this.btn_Update_Item.Click += new System.EventHandler(this.btn_Update_Item_Click);
             // 
             // btn_Add_Item
             // 
@@ -121,6 +127,7 @@ namespace Cafe_Management_System
             this.btn_Add_Item.TabIndex = 1;
             this.btn_Add_Item.Text = "Add Item";
             this.btn_Add_Item.UseVisualStyleBackColor = false;
+            this.btn_Add_Item.Click += new System.EventHandler(this.btn_Add_Item_Click);
             // 
             // btn_Place_Order
             // 
@@ -139,20 +146,55 @@ namespace Cafe_Management_System
             // pnl_Right_Manu
             // 
             this.pnl_Right_Manu.BackColor = System.Drawing.Color.White;
+            this.pnl_Right_Manu.Controls.Add(this.remove_Item1);
+            this.pnl_Right_Manu.Controls.Add(this.uC_Update_Item1);
+            this.pnl_Right_Manu.Controls.Add(this.uC_Place_Order1);
+            this.pnl_Right_Manu.Controls.Add(this.uC_Add_Item1);
             this.pnl_Right_Manu.Controls.Add(this.uC_Banner1);
             this.pnl_Right_Manu.Location = new System.Drawing.Point(332, 18);
             this.pnl_Right_Manu.Name = "pnl_Right_Manu";
             this.pnl_Right_Manu.Size = new System.Drawing.Size(1006, 735);
             this.pnl_Right_Manu.TabIndex = 1;
             // 
+            // uC_Update_Item1
+            // 
+            this.uC_Update_Item1.BackColor = System.Drawing.Color.White;
+            this.uC_Update_Item1.Location = new System.Drawing.Point(0, 2);
+            this.uC_Update_Item1.Name = "uC_Update_Item1";
+            this.uC_Update_Item1.Size = new System.Drawing.Size(1006, 735);
+            this.uC_Update_Item1.TabIndex = 3;
+            // 
+            // uC_Place_Order1
+            // 
+            this.uC_Place_Order1.BackColor = System.Drawing.Color.White;
+            this.uC_Place_Order1.Location = new System.Drawing.Point(1, -3);
+            this.uC_Place_Order1.Name = "uC_Place_Order1";
+            this.uC_Place_Order1.Size = new System.Drawing.Size(1006, 735);
+            this.uC_Place_Order1.TabIndex = 2;
+            // 
+            // uC_Add_Item1
+            // 
+            this.uC_Add_Item1.BackColor = System.Drawing.Color.White;
+            this.uC_Add_Item1.Location = new System.Drawing.Point(3, 4);
+            this.uC_Add_Item1.Name = "uC_Add_Item1";
+            this.uC_Add_Item1.Size = new System.Drawing.Size(1006, 735);
+            this.uC_Add_Item1.TabIndex = 1;
+            // 
             // uC_Banner1
             // 
             this.uC_Banner1.BackColor = System.Drawing.Color.White;
             this.uC_Banner1.ForeColor = System.Drawing.Color.Coral;
-            this.uC_Banner1.Location = new System.Drawing.Point(0, -6);
+            this.uC_Banner1.Location = new System.Drawing.Point(3, 0);
             this.uC_Banner1.Name = "uC_Banner1";
             this.uC_Banner1.Size = new System.Drawing.Size(1006, 735);
             this.uC_Banner1.TabIndex = 0;
+            // 
+            // remove_Item1
+            // 
+            this.remove_Item1.Location = new System.Drawing.Point(1, 0);
+            this.remove_Item1.Name = "remove_Item1";
+            this.remove_Item1.Size = new System.Drawing.Size(1006, 735);
+            this.remove_Item1.TabIndex = 4;
             // 
             // frm_DashBoard
             // 
@@ -166,6 +208,7 @@ namespace Cafe_Management_System
             this.Name = "frm_DashBoard";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "DashBoard";
+            this.Load += new System.EventHandler(this.frm_DashBoard_Load);
             this.pnl_Left_Manu.ResumeLayout(false);
             this.pnl_Left_Manu.PerformLayout();
             this.pnl_Right_Manu.ResumeLayout(false);
@@ -184,5 +227,9 @@ namespace Cafe_Management_System
         private System.Windows.Forms.LinkLabel llbl_Logout;
         private System.Windows.Forms.Button btn_Close;
         private UC_Banner uC_Banner1;
+        private All_User_Controls.UC_Add_Item uC_Add_Item1;
+        private All_User_Controls.UC_Place_Order uC_Place_Order1;
+        private All_User_Controls.UC_Update_Item uC_Update_Item1;
+        private All_User_Controls.Remove_Item remove_Item1;
     }
 }

@@ -46,12 +46,37 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="All_User_Controls\Remove_Item.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="All_User_Controls\Remove_Item.Designer.cs">
+      <DependentUpon>Remove_Item.cs</DependentUpon>
+    </Compile>
+    <Compile Include="All_User_Controls\UC_Add_Item.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="All_User_Controls\UC_Add_Item.Designer.cs">
+      <DependentUpon>UC_Add_Item.cs</DependentUpon>
+    </Compile>
+    <Compile Include="All_User_Controls\UC_Place_Order.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="All_User_Controls\UC_Place_Order.Designer.cs">
+      <DependentUpon>UC_Place_Order.cs</DependentUpon>
+    </Compile>
+    <Compile Include="All_User_Controls\UC_Update_Item.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="All_User_Controls\UC_Update_Item.Designer.cs">
+      <DependentUpon>UC_Update_Item.cs</DependentUpon>
+    </Compile>
     <Compile Include="frm_DashBoard.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frm_DashBoard.Designer.cs">
       <DependentUpon>frm_DashBoard.cs</DependentUpon>
     </Compile>
+    <Compile Include="Function.cs" />
     <Compile Include="Login_Form.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -60,12 +85,24 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="UC_Banner.cs">
+    <Compile Include="All_User_Controls\UC_Banner.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="UC_Banner.Designer.cs">
+    <Compile Include="All_User_Controls\UC_Banner.Designer.cs">
       <DependentUpon>UC_Banner.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="All_User_Controls\Remove_Item.resx">
+      <DependentUpon>Remove_Item.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="All_User_Controls\UC_Add_Item.resx">
+      <DependentUpon>UC_Add_Item.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="All_User_Controls\UC_Place_Order.resx">
+      <DependentUpon>UC_Place_Order.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="All_User_Controls\UC_Update_Item.resx">
+      <DependentUpon>UC_Update_Item.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frm_DashBoard.resx">
       <DependentUpon>frm_DashBoard.cs</DependentUpon>
     </EmbeddedResource>
@@ -81,7 +118,7 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="UC_Banner.resx">
+    <EmbeddedResource Include="All_User_Controls\UC_Banner.resx">
       <DependentUpon>UC_Banner.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">

@@ -96,6 +96,7 @@ namespace Cafe_Management_System
             // btn_Sign_In
             // 
             this.btn_Sign_In.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(131)))), ((int)(((byte)(241)))));
+            this.btn_Sign_In.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_Sign_In.Font = new System.Drawing.Font("Segoe Print", 14.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_Sign_In.Location = new System.Drawing.Point(86, 469);
             this.btn_Sign_In.Name = "btn_Sign_In";

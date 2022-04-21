@@ -61,13 +61,13 @@ namespace Cafe_Management_System
             // lbl_Title
             // 
             this.lbl_Title.AutoSize = true;
-            this.lbl_Title.Font = new System.Drawing.Font("Monotype Corsiva", 48F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_Title.Font = new System.Drawing.Font("Ink Free", 48F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_Title.ForeColor = System.Drawing.Color.Black;
-            this.lbl_Title.Location = new System.Drawing.Point(238, 485);
+            this.lbl_Title.Location = new System.Drawing.Point(256, 533);
             this.lbl_Title.Name = "lbl_Title";
-            this.lbl_Title.Size = new System.Drawing.Size(497, 97);
+            this.lbl_Title.Size = new System.Drawing.Size(484, 99);
             this.lbl_Title.TabIndex = 3;
-            this.lbl_Title.Text = "U and Me Cafe";
+            this.lbl_Title.Text = "U && Me Cafe";
             // 
             // t_Title
             // 
