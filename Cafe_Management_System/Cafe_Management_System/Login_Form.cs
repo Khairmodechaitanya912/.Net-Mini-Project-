@@ -40,5 +40,10 @@ namespace Cafe_Management_System
             FDB.Show();
             this.Hide();
         }
+
+        private void tb_Username_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -72,6 +72,7 @@ namespace Cafe_Management_System
             this.tb_Username.TabIndex = 3;
             this.tb_Username.Text = "Enter Username";
             this.tb_Username.Click += new System.EventHandler(this.tb_Username_Click);
+            this.tb_Username.TextChanged += new System.EventHandler(this.tb_Username_TextChanged);
             // 
             // tb_Password
             // 

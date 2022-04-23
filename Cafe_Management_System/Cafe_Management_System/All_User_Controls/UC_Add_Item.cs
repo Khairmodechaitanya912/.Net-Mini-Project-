@@ -12,11 +12,31 @@ namespace Cafe_Management_System.All_User_Controls
 {
     public partial class UC_Add_Item : UserControl
     {
+        Function Fn = new Function();
+        String query;
         public UC_Add_Item()
         {
             InitializeComponent();
         }
 
+        private void btn_Add_Click(object sender, EventArgs e)
+        {
+            query = "Insert Into Item (Name, category, price)Values('" + tb_Item_Name.Text + "', '" + cmb_Category.Text + "', " + tb_Price.Text + ")";
+            Fn.setData(query);
+            Clear_Controls();
+            
+        }
 
+        public void Clear_Controls()
+        {
+            cmb_Category.SelectedIndex = -1;
+            tb_Item_Name.Clear();
+            tb_Price.Clear();
+        }
+
+        private void UC_Add_Item_Leave(object sender, EventArgs e)
+        {
+            Clear_Controls();
+        }
     }
 }

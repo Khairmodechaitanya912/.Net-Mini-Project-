@@ -93,6 +93,7 @@ namespace Cafe_Management_System.All_User_Controls
             this.btn_Add.TabIndex = 4;
             this.btn_Add.Text = "Add Item";
             this.btn_Add.UseVisualStyleBackColor = false;
+            this.btn_Add.Click += new System.EventHandler(this.btn_Add_Click);
             // 
             // cmb_Category
             // 
@@ -107,7 +108,7 @@ namespace Cafe_Management_System.All_User_Controls
             this.cmb_Category.Location = new System.Drawing.Point(190, 247);
             this.cmb_Category.Name = "cmb_Category";
             this.cmb_Category.Size = new System.Drawing.Size(503, 48);
-            this.cmb_Category.TabIndex = 5;
+            this.cmb_Category.TabIndex = 1;
             // 
             // tb_Item_Name
             // 
@@ -115,7 +116,7 @@ namespace Cafe_Management_System.All_User_Controls
             this.tb_Item_Name.Location = new System.Drawing.Point(190, 368);
             this.tb_Item_Name.Name = "tb_Item_Name";
             this.tb_Item_Name.Size = new System.Drawing.Size(503, 48);
-            this.tb_Item_Name.TabIndex = 6;
+            this.tb_Item_Name.TabIndex = 2;
             // 
             // tb_Price
             // 
@@ -123,7 +124,7 @@ namespace Cafe_Management_System.All_User_Controls
             this.tb_Price.Location = new System.Drawing.Point(190, 493);
             this.tb_Price.Name = "tb_Price";
             this.tb_Price.Size = new System.Drawing.Size(503, 48);
-            this.tb_Price.TabIndex = 7;
+            this.tb_Price.TabIndex = 3;
             // 
             // pnl_Add_New_Item
             // 
@@ -149,6 +150,7 @@ namespace Cafe_Management_System.All_User_Controls
             this.Controls.Add(this.pnl_Add_New_Item);
             this.Name = "UC_Add_Item";
             this.Size = new System.Drawing.Size(1006, 735);
+            this.Leave += new System.EventHandler(this.UC_Add_Item_Leave);
             this.pnl_Add_New_Item.ResumeLayout(false);
             this.pnl_Add_New_Item.PerformLayout();
             this.ResumeLayout(false);
