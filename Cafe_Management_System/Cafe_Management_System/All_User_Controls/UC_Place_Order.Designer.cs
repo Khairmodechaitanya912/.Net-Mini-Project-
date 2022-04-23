@@ -120,6 +120,7 @@ namespace Cafe_Management_System.All_User_Controls
             this.btn_Remove.TabIndex = 4;
             this.btn_Remove.Text = "Remove";
             this.btn_Remove.UseVisualStyleBackColor = false;
+            this.btn_Remove.Click += new System.EventHandler(this.btn_Remove_Click);
             // 
             // btn_Print
             // 
@@ -133,6 +134,7 @@ namespace Cafe_Management_System.All_User_Controls
             this.btn_Print.TabIndex = 21;
             this.btn_Print.Text = "Print";
             this.btn_Print.UseVisualStyleBackColor = false;
+            this.btn_Print.Click += new System.EventHandler(this.btn_Print_Click);
             // 
             // dgv_Place_Order
             // 
@@ -153,6 +155,7 @@ namespace Cafe_Management_System.All_User_Controls
             this.dgv_Place_Order.RowTemplate.Height = 24;
             this.dgv_Place_Order.Size = new System.Drawing.Size(667, 225);
             this.dgv_Place_Order.TabIndex = 20;
+            this.dgv_Place_Order.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_Place_Order_CellClick);
             // 
             // Item_Name
             // 
@@ -194,6 +197,7 @@ namespace Cafe_Management_System.All_User_Controls
             this.btn_Add_To_Cart.TabIndex = 18;
             this.btn_Add_To_Cart.Text = "Add To Cart";
             this.btn_Add_To_Cart.UseVisualStyleBackColor = false;
+            this.btn_Add_To_Cart.Click += new System.EventHandler(this.btn_Add_To_Cart_Click);
             // 
             // nud_Quantity
             // 
@@ -202,6 +206,7 @@ namespace Cafe_Management_System.All_User_Controls
             this.nud_Quantity.Name = "nud_Quantity";
             this.nud_Quantity.Size = new System.Drawing.Size(246, 48);
             this.nud_Quantity.TabIndex = 17;
+            this.nud_Quantity.ValueChanged += new System.EventHandler(this.nud_Quantity_ValueChanged);
             // 
             // lbl_Total
             // 
@@ -252,6 +257,7 @@ namespace Cafe_Management_System.All_User_Controls
             this.lb_Item_List.Name = "lb_Item_List";
             this.lb_Item_List.Size = new System.Drawing.Size(230, 389);
             this.lb_Item_List.TabIndex = 11;
+            this.lb_Item_List.SelectedIndexChanged += new System.EventHandler(this.lb_Item_List_SelectedIndexChanged);
             // 
             // lbl_Price
             // 

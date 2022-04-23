@@ -30,11 +30,11 @@ namespace Cafe_Management_System.All_User_Controls
         private void InitializeComponent()
         {
             this.pnl_Add_New_Item = new System.Windows.Forms.Panel();
+            this.lbl_Delete_Lbl = new System.Windows.Forms.Label();
             this.dgv_Delete_Item = new System.Windows.Forms.DataGridView();
             this.lbl_Item_Name = new System.Windows.Forms.Label();
             this.tb_Item_Name = new System.Windows.Forms.TextBox();
             this.lbl_Delete_Item = new System.Windows.Forms.Label();
-            this.lbl_Delete_Lbl = new System.Windows.Forms.Label();
             this.pnl_Add_New_Item.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_Delete_Item)).BeginInit();
             this.SuspendLayout();
@@ -52,8 +52,20 @@ namespace Cafe_Management_System.All_User_Controls
             this.pnl_Add_New_Item.Size = new System.Drawing.Size(959, 691);
             this.pnl_Add_New_Item.TabIndex = 10;
             // 
+            // lbl_Delete_Lbl
+            // 
+            this.lbl_Delete_Lbl.AutoSize = true;
+            this.lbl_Delete_Lbl.Font = new System.Drawing.Font("Segoe Print", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_Delete_Lbl.Location = new System.Drawing.Point(548, 650);
+            this.lbl_Delete_Lbl.Name = "lbl_Delete_Lbl";
+            this.lbl_Delete_Lbl.Size = new System.Drawing.Size(74, 33);
+            this.lbl_Delete_Lbl.TabIndex = 14;
+            this.lbl_Delete_Lbl.Text = "Delete";
+            this.lbl_Delete_Lbl.Click += new System.EventHandler(this.lbl_Delete_Lbl_Click);
+            // 
             // dgv_Delete_Item
             // 
+            this.dgv_Delete_Item.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgv_Delete_Item.BackgroundColor = System.Drawing.Color.White;
             this.dgv_Delete_Item.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgv_Delete_Item.Location = new System.Drawing.Point(16, 167);
@@ -62,6 +74,7 @@ namespace Cafe_Management_System.All_User_Controls
             this.dgv_Delete_Item.RowTemplate.Height = 24;
             this.dgv_Delete_Item.Size = new System.Drawing.Size(925, 475);
             this.dgv_Delete_Item.TabIndex = 13;
+            this.dgv_Delete_Item.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_Delete_Item_CellClick);
             // 
             // lbl_Item_Name
             // 
@@ -80,6 +93,7 @@ namespace Cafe_Management_System.All_User_Controls
             this.tb_Item_Name.Name = "tb_Item_Name";
             this.tb_Item_Name.Size = new System.Drawing.Size(311, 48);
             this.tb_Item_Name.TabIndex = 11;
+            this.tb_Item_Name.TextChanged += new System.EventHandler(this.tb_Item_Name_TextChanged);
             // 
             // lbl_Delete_Item
             // 
@@ -87,19 +101,9 @@ namespace Cafe_Management_System.All_User_Controls
             this.lbl_Delete_Item.Font = new System.Drawing.Font("Segoe Print", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_Delete_Item.Location = new System.Drawing.Point(7, 10);
             this.lbl_Delete_Item.Name = "lbl_Delete_Item";
-            this.lbl_Delete_Item.Size = new System.Drawing.Size(227, 61);
+            this.lbl_Delete_Item.Size = new System.Drawing.Size(214, 58);
             this.lbl_Delete_Item.TabIndex = 0;
             this.lbl_Delete_Item.Text = "Delete Item";
-            // 
-            // lbl_Delete_Lbl
-            // 
-            this.lbl_Delete_Lbl.AutoSize = true;
-            this.lbl_Delete_Lbl.Font = new System.Drawing.Font("Segoe Print", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_Delete_Lbl.Location = new System.Drawing.Point(770, 649);
-            this.lbl_Delete_Lbl.Name = "lbl_Delete_Lbl";
-            this.lbl_Delete_Lbl.Size = new System.Drawing.Size(74, 33);
-            this.lbl_Delete_Lbl.TabIndex = 14;
-            this.lbl_Delete_Lbl.Text = "Delete";
             // 
             // Remove_Item
             // 
@@ -109,6 +113,7 @@ namespace Cafe_Management_System.All_User_Controls
             this.Name = "Remove_Item";
             this.Size = new System.Drawing.Size(1006, 735);
             this.Load += new System.EventHandler(this.Remove_Item_Load);
+            this.Enter += new System.EventHandler(this.Remove_Item_Enter);
             this.pnl_Add_New_Item.ResumeLayout(false);
             this.pnl_Add_New_Item.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_Delete_Item)).EndInit();
