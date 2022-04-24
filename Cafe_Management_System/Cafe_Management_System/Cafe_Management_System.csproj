@@ -70,6 +70,7 @@
     <Compile Include="All_User_Controls\UC_Update_Item.Designer.cs">
       <DependentUpon>UC_Update_Item.cs</DependentUpon>
     </Compile>
+    <Compile Include="DGVPrinter.cs" />
     <Compile Include="frm_DashBoard.cs">
       <SubType>Form</SubType>
     </Compile>

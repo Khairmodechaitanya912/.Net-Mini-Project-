@@ -41,25 +41,32 @@ namespace Cafe_Management_System.All_User_Controls
         int id;
         private void dgv_Update_Item_CellClick(object sender, DataGridViewCellEventArgs e)
         {
-            id = int.Parse(dgv_Update_Item.Rows[e.RowIndex].Cells[0].Value.ToString());
-            String Category = dgv_Update_Item.Rows[e.RowIndex].Cells[2].Value.ToString();
-            String Name = dgv_Update_Item.Rows[e.RowIndex].Cells[1].Value.ToString();
-            int Price = int.Parse(dgv_Update_Item.Rows[e.RowIndex].Cells[3].Value.ToString());
+             id = int.Parse(dgv_Update_Item.Rows[e.RowIndex].Cells[0].Value.ToString());
+             String Category = dgv_Update_Item.Rows[e.RowIndex].Cells[2].Value.ToString();
+             String Name = dgv_Update_Item.Rows[e.RowIndex].Cells[1].Value.ToString();
+             int Price = int.Parse(dgv_Update_Item.Rows[e.RowIndex].Cells[3].Value.ToString());
 
-            cmb_Category.Text = Category;
-            tb_Item_Name.Text = Name;
-            tb_Price.Text = Price.ToString();
+             cmb_Category.Text = Category;
+             tb_Item_Name.Text = Name;
+             tb_Price.Text = Price.ToString();
         }
 
         private void btn_Update_Click(object sender, EventArgs e)
         {
-            query = "Update Item  Set Name = '" + tb_Item_Name.Text + "', category = '" + cmb_Category.Text + "', price = " + tb_Price.Text + " Where I_Id = " + id +"";
-            Fn.setData(query);
-            Load_Data();
+            if (tb_Item_Name.Text != "" && tb_Price.Text != "" && cmb_Category.Text != "")
+            {
+                query = "Update Item  Set Name = '" + tb_Item_Name.Text + "', category = '" + cmb_Category.Text + "', price = " + tb_Price.Text + " Where I_Id = " + id + "";
+                Fn.setData(query);
+                Load_Data();
 
-            cmb_Category.SelectedIndex = -1;
-            tb_Item_Name.Clear();
-            tb_Price.Clear();
+                cmb_Category.SelectedIndex = -1;
+                tb_Item_Name.Clear();
+                tb_Price.Clear();
+            }
+            else
+            {
+                MessageBox.Show("Select The Row Who's Product Is Update...!!", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
         }
     }
 }

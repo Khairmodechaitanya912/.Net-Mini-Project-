@@ -45,6 +45,7 @@ namespace Cafe_Management_System.All_User_Controls
             // 
             this.lbl_Add_New_Item.AutoSize = true;
             this.lbl_Add_New_Item.Font = new System.Drawing.Font("Segoe Print", 22.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_Add_New_Item.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(131)))), ((int)(((byte)(241)))));
             this.lbl_Add_New_Item.Location = new System.Drawing.Point(298, 56);
             this.lbl_Add_New_Item.Name = "lbl_Add_New_Item";
             this.lbl_Add_New_Item.Size = new System.Drawing.Size(310, 68);

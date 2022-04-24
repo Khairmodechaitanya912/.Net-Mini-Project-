@@ -72,16 +72,16 @@ namespace Cafe_Management_System
             this.tb_Username.TabIndex = 3;
             this.tb_Username.Text = "Enter Username";
             this.tb_Username.Click += new System.EventHandler(this.tb_Username_Click);
-            this.tb_Username.TextChanged += new System.EventHandler(this.tb_Username_TextChanged);
             // 
             // tb_Password
             // 
             this.tb_Password.Font = new System.Drawing.Font("MV Boli", 12F);
             this.tb_Password.Location = new System.Drawing.Point(67, 386);
             this.tb_Password.Name = "tb_Password";
+            this.tb_Password.PasswordChar = '*';
             this.tb_Password.Size = new System.Drawing.Size(247, 40);
             this.tb_Password.TabIndex = 4;
-            this.tb_Password.Text = "Enter Password";
+            this.tb_Password.Text = "For";
             this.tb_Password.Click += new System.EventHandler(this.tb_Password_Click);
             // 
             // pictureBox1

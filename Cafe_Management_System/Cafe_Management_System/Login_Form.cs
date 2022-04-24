@@ -29,9 +29,19 @@ namespace Cafe_Management_System
 
         private void btn_Sign_In_Click(object sender, EventArgs e)
         {
-            frm_DashBoard FDB = new frm_DashBoard();
-            FDB.Show();
-            this.Hide();
+
+            if (tb_Username.Text == "Admin" && tb_Password.Text == "a123")
+            {
+                MessageBox.Show("Login Successfully", "Working", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                frm_DashBoard FDB = new frm_DashBoard();
+                FDB.Show();
+                this.Hide();
+            }
+
+            else
+            {
+                MessageBox.Show(" Invalid UserName Or Password Plzzz Enter Valid Username Or Password ", " Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
 
         private void llbl_Continue_As_Guest_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
@@ -39,11 +49,8 @@ namespace Cafe_Management_System
             frm_DashBoard FDB = new frm_DashBoard("Guest");
             FDB.Show();
             this.Hide();
-        }
-
-        private void tb_Username_TextChanged(object sender, EventArgs e)
-        {
 
         }
+
     }
 }

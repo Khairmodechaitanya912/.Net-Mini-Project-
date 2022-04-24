@@ -21,9 +21,16 @@ namespace Cafe_Management_System.All_User_Controls
 
         private void btn_Add_Click(object sender, EventArgs e)
         {
-            query = "Insert Into Item (Name, category, price)Values('" + tb_Item_Name.Text + "', '" + cmb_Category.Text + "', " + tb_Price.Text + ")";
-            Fn.setData(query);
-            Clear_Controls();
+            if (tb_Item_Name.Text != "" && cmb_Category.Text != "" && tb_Price.Text != "")
+            {
+                query = "Insert Into Item (Name, category, price)Values('" + tb_Item_Name.Text + "', '" + cmb_Category.Text + "', " + tb_Price.Text + ")";
+                Fn.setData(query);
+                Clear_Controls();
+            }
+            else
+            {
+                MessageBox.Show("Plzz Fill All The Information..!!", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning); 
+            }
             
         }
 

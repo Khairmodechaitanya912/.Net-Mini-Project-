@@ -1,4 +1,5 @@
-﻿using System;
+﻿using DGVPrinterHelper;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -114,7 +115,21 @@ namespace Cafe_Management_System.All_User_Controls
 
         private void btn_Print_Click(object sender, EventArgs e)
         {
+            DGVPrinter printer = new DGVPrinter();
+            printer.Title = "Customer Bill";
+            printer.SubTitle = string.Format("Date: {0} ", DateTime.Now.Date);
+            printer.SubTitleFormatFlags = StringFormatFlags.LineLimit | StringFormatFlags.NoClip;
+            printer.PageNumbers = true;
+            printer.PageNumberInHeader = false;
+            printer.PorportionalColumns = true;
+            printer.HeaderCellAlignment = StringAlignment.Near;
+            printer.Footer = "Total Payable Amount : " + lbl_RS.Text;
+            printer.FooterSpacing = 15;
+            printer.PrintDataGridView(dgv_Place_Order);
 
+            Tot = 0;
+            dgv_Place_Order.Rows.Clear();
+            lbl_RS.Text = "Rs. " + Tot;
         }
 
         private void btn_Remove_Click(object sender, EventArgs e)

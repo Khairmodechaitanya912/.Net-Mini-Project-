@@ -99,6 +99,7 @@ namespace Cafe_Management_System.All_User_Controls
             // 
             this.lbl_Delete_Item.AutoSize = true;
             this.lbl_Delete_Item.Font = new System.Drawing.Font("Segoe Print", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_Delete_Item.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(131)))), ((int)(((byte)(241)))));
             this.lbl_Delete_Item.Location = new System.Drawing.Point(7, 10);
             this.lbl_Delete_Item.Name = "lbl_Delete_Item";
             this.lbl_Delete_Item.Size = new System.Drawing.Size(214, 58);

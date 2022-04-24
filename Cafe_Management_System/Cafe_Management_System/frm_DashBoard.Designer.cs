@@ -38,11 +38,11 @@ namespace Cafe_Management_System
             this.btn_Add_Item = new System.Windows.Forms.Button();
             this.btn_Place_Order = new System.Windows.Forms.Button();
             this.pnl_Right_Manu = new System.Windows.Forms.Panel();
+            this.remove_Item1 = new Cafe_Management_System.All_User_Controls.Remove_Item();
             this.uC_Update_Item1 = new Cafe_Management_System.All_User_Controls.UC_Update_Item();
             this.uC_Place_Order1 = new Cafe_Management_System.All_User_Controls.UC_Place_Order();
             this.uC_Add_Item1 = new Cafe_Management_System.All_User_Controls.UC_Add_Item();
             this.uC_Banner1 = new Cafe_Management_System.UC_Banner();
-            this.remove_Item1 = new Cafe_Management_System.All_User_Controls.Remove_Item();
             this.pnl_Left_Manu.SuspendLayout();
             this.pnl_Right_Manu.SuspendLayout();
             this.SuspendLayout();
@@ -63,13 +63,14 @@ namespace Cafe_Management_System
             // 
             // btn_Close
             // 
-            this.btn_Close.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(131)))), ((int)(((byte)(241)))));
+            this.btn_Close.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(150)))), ((int)(((byte)(250)))));
             this.btn_Close.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_Close.BackgroundImage")));
             this.btn_Close.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btn_Close.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_Close.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(131)))), ((int)(((byte)(241)))));
             this.btn_Close.Location = new System.Drawing.Point(0, 0);
             this.btn_Close.Name = "btn_Close";
-            this.btn_Close.Size = new System.Drawing.Size(50, 47);
+            this.btn_Close.Size = new System.Drawing.Size(72, 61);
             this.btn_Close.TabIndex = 5;
             this.btn_Close.UseVisualStyleBackColor = false;
             this.btn_Close.Click += new System.EventHandler(this.btn_Close_Click);
@@ -156,6 +157,13 @@ namespace Cafe_Management_System
             this.pnl_Right_Manu.Size = new System.Drawing.Size(1006, 735);
             this.pnl_Right_Manu.TabIndex = 1;
             // 
+            // remove_Item1
+            // 
+            this.remove_Item1.Location = new System.Drawing.Point(1, 0);
+            this.remove_Item1.Name = "remove_Item1";
+            this.remove_Item1.Size = new System.Drawing.Size(1006, 735);
+            this.remove_Item1.TabIndex = 4;
+            // 
             // uC_Update_Item1
             // 
             this.uC_Update_Item1.BackColor = System.Drawing.Color.White;
@@ -188,13 +196,6 @@ namespace Cafe_Management_System
             this.uC_Banner1.Name = "uC_Banner1";
             this.uC_Banner1.Size = new System.Drawing.Size(1006, 735);
             this.uC_Banner1.TabIndex = 0;
-            // 
-            // remove_Item1
-            // 
-            this.remove_Item1.Location = new System.Drawing.Point(1, 0);
-            this.remove_Item1.Name = "remove_Item1";
-            this.remove_Item1.Size = new System.Drawing.Size(1006, 735);
-            this.remove_Item1.TabIndex = 4;
             // 
             // frm_DashBoard
             // 

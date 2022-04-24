@@ -80,6 +80,7 @@ namespace Cafe_Management_System.All_User_Controls
             // 
             this.lbl_Update_Item.AutoSize = true;
             this.lbl_Update_Item.Font = new System.Drawing.Font("Segoe Print", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_Update_Item.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(131)))), ((int)(((byte)(241)))));
             this.lbl_Update_Item.Location = new System.Drawing.Point(7, 10);
             this.lbl_Update_Item.Name = "lbl_Update_Item";
             this.lbl_Update_Item.Size = new System.Drawing.Size(233, 58);
