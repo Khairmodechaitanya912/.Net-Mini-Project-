@@ -1,0 +1,317 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{A9F45BB0-3E74-40E5-AE20-B1FCEADEA626}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>OLA_CAB_Management_Syatem</RootNamespace>
+    <AssemblyName>OLA_CAB_Management_Syatem</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DB_OLA_CAB_Mgt_SystemDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DB_OLA_CAB_Mgt_SystemDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DB_OLA_CAB_Mgt_SystemDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DB_OLA_CAB_Mgt_SystemDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DB_OLA_CAB_Mgt_SystemDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DB_OLA_CAB_Mgt_SystemDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DB_OLA_CAB_Mgt_SystemDataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DB_OLA_CAB_Mgt_SystemDataSet3.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DB_OLA_CAB_Mgt_SystemDataSet4.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DB_OLA_CAB_Mgt_SystemDataSet4.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="frm_Add_Area.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Add_Area.Designer.cs">
+      <DependentUpon>frm_Add_Area.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_Add_Passenger.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Add_Passenger.Designer.cs">
+      <DependentUpon>frm_Add_Passenger.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_Add_Driver.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Add_Driver.Designer.cs">
+      <DependentUpon>frm_Add_Driver.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_Add_Passenger_Car.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Add_Passenger_Car.Designer.cs">
+      <DependentUpon>frm_Add_Passenger_Car.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_Add_Vehicle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Add_Vehicle.Designer.cs">
+      <DependentUpon>frm_Add_Vehicle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_Delete_User.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Delete_User.Designer.cs">
+      <DependentUpon>frm_Delete_User.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Login.Designer.cs">
+      <DependentUpon>frm_Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_Add_User.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Add_User.Designer.cs">
+      <DependentUpon>frm_Add_User.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_MDI_OlaCab.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_MDI_OlaCab.Designer.cs">
+      <DependentUpon>frm_MDI_OlaCab.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_Update_Area.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Update_Area.Designer.cs">
+      <DependentUpon>frm_Update_Area.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_Update_Driver.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Update_Driver.Designer.cs">
+      <DependentUpon>frm_Update_Driver.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_Update_User.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Update_User.Designer.cs">
+      <DependentUpon>frm_Update_User.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_View_Area.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_View_Area.Designer.cs">
+      <DependentUpon>frm_View_Area.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_View_Bike_Passenger.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_View_Bike_Passenger.Designer.cs">
+      <DependentUpon>frm_View_Bike_Passenger.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_View_Car_Passenger.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_View_Car_Passenger.Designer.cs">
+      <DependentUpon>frm_View_Car_Passenger.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_View_Driver.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_View_Driver.Designer.cs">
+      <DependentUpon>frm_View_Driver.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_View_Vehicle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_View_Vehicle.Designer.cs">
+      <DependentUpon>frm_View_Vehicle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Global_Vars.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="frm_Add_Area.resx">
+      <DependentUpon>frm_Add_Area.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_Add_Passenger.resx">
+      <DependentUpon>frm_Add_Passenger.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_Add_Driver.resx">
+      <DependentUpon>frm_Add_Driver.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_Add_Passenger_Car.resx">
+      <DependentUpon>frm_Add_Passenger_Car.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_Add_User.resx">
+      <DependentUpon>frm_Add_User.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_Add_Vehicle.resx">
+      <DependentUpon>frm_Add_Vehicle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_Delete_User.resx">
+      <DependentUpon>frm_Delete_User.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_Login.resx">
+      <DependentUpon>frm_Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_MDI_OlaCab.resx">
+      <DependentUpon>frm_MDI_OlaCab.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_Update_Area.resx">
+      <DependentUpon>frm_Update_Area.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_Update_Driver.resx">
+      <DependentUpon>frm_Update_Driver.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_Update_User.resx">
+      <DependentUpon>frm_Update_User.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_View_Area.resx">
+      <DependentUpon>frm_View_Area.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_View_Bike_Passenger.resx">
+      <DependentUpon>frm_View_Bike_Passenger.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_View_Car_Passenger.resx">
+      <DependentUpon>frm_View_Car_Passenger.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_View_Driver.resx">
+      <DependentUpon>frm_View_Driver.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_View_Vehicle.resx">
+      <DependentUpon>frm_View_Vehicle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="app.config" />
+    <None Include="DB_OLA_CAB_Mgt_SystemDataSet.xsc">
+      <DependentUpon>DB_OLA_CAB_Mgt_SystemDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="DB_OLA_CAB_Mgt_SystemDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DB_OLA_CAB_Mgt_SystemDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DB_OLA_CAB_Mgt_SystemDataSet.xss">
+      <DependentUpon>DB_OLA_CAB_Mgt_SystemDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="DB_OLA_CAB_Mgt_SystemDataSet1.xsc">
+      <DependentUpon>DB_OLA_CAB_Mgt_SystemDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="DB_OLA_CAB_Mgt_SystemDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DB_OLA_CAB_Mgt_SystemDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DB_OLA_CAB_Mgt_SystemDataSet1.xss">
+      <DependentUpon>DB_OLA_CAB_Mgt_SystemDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="DB_OLA_CAB_Mgt_SystemDataSet2.xsc">
+      <DependentUpon>DB_OLA_CAB_Mgt_SystemDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="DB_OLA_CAB_Mgt_SystemDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DB_OLA_CAB_Mgt_SystemDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DB_OLA_CAB_Mgt_SystemDataSet2.xss">
+      <DependentUpon>DB_OLA_CAB_Mgt_SystemDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="DB_OLA_CAB_Mgt_SystemDataSet3.xsc">
+      <DependentUpon>DB_OLA_CAB_Mgt_SystemDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="DB_OLA_CAB_Mgt_SystemDataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DB_OLA_CAB_Mgt_SystemDataSet3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DB_OLA_CAB_Mgt_SystemDataSet3.xss">
+      <DependentUpon>DB_OLA_CAB_Mgt_SystemDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="DB_OLA_CAB_Mgt_SystemDataSet4.xsc">
+      <DependentUpon>DB_OLA_CAB_Mgt_SystemDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="DB_OLA_CAB_Mgt_SystemDataSet4.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DB_OLA_CAB_Mgt_SystemDataSet4.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DB_OLA_CAB_Mgt_SystemDataSet4.xss">
+      <DependentUpon>DB_OLA_CAB_Mgt_SystemDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
