@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.gb_Add_Vehicle = new System.Windows.Forms.GroupBox();
+            this.dtp_Date = new System.Windows.Forms.DateTimePicker();
             this.btn_Refresh = new System.Windows.Forms.Button();
             this.btn_Save = new System.Windows.Forms.Button();
             this.cmb_Vehicle_Type = new System.Windows.Forms.ComboBox();
@@ -43,7 +44,6 @@
             this.tb_Vehicle_Id = new System.Windows.Forms.TextBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.lbl_Header = new System.Windows.Forms.Label();
-            this.dtp_Date = new System.Windows.Forms.DateTimePicker();
             this.gb_Add_Vehicle.SuspendLayout();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -71,6 +71,14 @@
             this.gb_Add_Vehicle.TabIndex = 0;
             this.gb_Add_Vehicle.TabStop = false;
             this.gb_Add_Vehicle.Text = "Vehicle Details";
+            // 
+            // dtp_Date
+            // 
+            this.dtp_Date.Location = new System.Drawing.Point(572, 22);
+            this.dtp_Date.Name = "dtp_Date";
+            this.dtp_Date.Size = new System.Drawing.Size(265, 34);
+            this.dtp_Date.TabIndex = 49;
+            this.dtp_Date.ValueChanged += new System.EventHandler(this.dtp_Date_ValueChanged);
             // 
             // btn_Refresh
             // 
@@ -213,13 +221,6 @@
             this.lbl_Header.Size = new System.Drawing.Size(528, 112);
             this.lbl_Header.TabIndex = 12;
             this.lbl_Header.Text = "Add Vehicle";
-            // 
-            // dtp_Date
-            // 
-            this.dtp_Date.Location = new System.Drawing.Point(572, 22);
-            this.dtp_Date.Name = "dtp_Date";
-            this.dtp_Date.Size = new System.Drawing.Size(265, 34);
-            this.dtp_Date.TabIndex = 49;
             // 
             // frm_Add_Vehicle
             // 

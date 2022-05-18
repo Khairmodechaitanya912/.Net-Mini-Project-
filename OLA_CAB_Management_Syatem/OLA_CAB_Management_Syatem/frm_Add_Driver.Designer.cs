@@ -146,6 +146,7 @@
             this.btn_Refresh.TabIndex = 72;
             this.btn_Refresh.Text = "Refresh";
             this.btn_Refresh.UseVisualStyleBackColor = false;
+            this.btn_Refresh.Click += new System.EventHandler(this.btn_Refresh_Click);
             // 
             // btn_Save
             // 
@@ -157,6 +158,7 @@
             this.btn_Save.TabIndex = 71;
             this.btn_Save.Text = "Save";
             this.btn_Save.UseVisualStyleBackColor = false;
+            this.btn_Save.Click += new System.EventHandler(this.btn_Save_Click);
             // 
             // lbl_Charges
             // 
@@ -355,6 +357,7 @@
             // 
             // tb_Driver_ID
             // 
+            this.tb_Driver_ID.Enabled = false;
             this.tb_Driver_ID.Font = new System.Drawing.Font("Verdana", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tb_Driver_ID.Location = new System.Drawing.Point(425, 79);
             this.tb_Driver_ID.Name = "tb_Driver_ID";

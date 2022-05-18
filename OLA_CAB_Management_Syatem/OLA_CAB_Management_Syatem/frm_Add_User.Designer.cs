@@ -34,10 +34,10 @@
             this.btn_Refresh = new System.Windows.Forms.Button();
             this.btn_Add = new System.Windows.Forms.Button();
             this.lbl_Confirm_Password = new System.Windows.Forms.Label();
-            this.lbl_New_Password = new System.Windows.Forms.Label();
+            this.lbl_Password = new System.Windows.Forms.Label();
             this.lbl_Username = new System.Windows.Forms.Label();
             this.tb_Confirm_Password = new System.Windows.Forms.TextBox();
-            this.tb_New_Password = new System.Windows.Forms.TextBox();
+            this.tb_Password = new System.Windows.Forms.TextBox();
             this.tb_Username = new System.Windows.Forms.TextBox();
             this.panel1.SuspendLayout();
             this.groupBox1.SuspendLayout();
@@ -57,7 +57,7 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Malgun Gothic", 50F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(627, -9);
+            this.label2.Location = new System.Drawing.Point(752, -9);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(421, 112);
             this.label2.TabIndex = 12;
@@ -69,13 +69,13 @@
             this.groupBox1.Controls.Add(this.btn_Refresh);
             this.groupBox1.Controls.Add(this.btn_Add);
             this.groupBox1.Controls.Add(this.lbl_Confirm_Password);
-            this.groupBox1.Controls.Add(this.lbl_New_Password);
+            this.groupBox1.Controls.Add(this.lbl_Password);
             this.groupBox1.Controls.Add(this.lbl_Username);
             this.groupBox1.Controls.Add(this.tb_Confirm_Password);
-            this.groupBox1.Controls.Add(this.tb_New_Password);
+            this.groupBox1.Controls.Add(this.tb_Password);
             this.groupBox1.Controls.Add(this.tb_Username);
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox1.Location = new System.Drawing.Point(419, 216);
+            this.groupBox1.Location = new System.Drawing.Point(465, 216);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(1013, 675);
             this.groupBox1.TabIndex = 75;
@@ -103,6 +103,7 @@
             this.btn_Add.TabIndex = 82;
             this.btn_Add.Text = "Add";
             this.btn_Add.UseVisualStyleBackColor = false;
+            this.btn_Add.Click += new System.EventHandler(this.btn_Add_Click);
             // 
             // lbl_Confirm_Password
             // 
@@ -114,15 +115,15 @@
             this.lbl_Confirm_Password.TabIndex = 80;
             this.lbl_Confirm_Password.Text = "Confirm Password";
             // 
-            // lbl_New_Password
+            // lbl_Password
             // 
-            this.lbl_New_Password.AutoSize = true;
-            this.lbl_New_Password.Font = new System.Drawing.Font("Verdana", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_New_Password.Location = new System.Drawing.Point(190, 237);
-            this.lbl_New_Password.Name = "lbl_New_Password";
-            this.lbl_New_Password.Size = new System.Drawing.Size(212, 29);
-            this.lbl_New_Password.TabIndex = 79;
-            this.lbl_New_Password.Text = "New Password";
+            this.lbl_Password.AutoSize = true;
+            this.lbl_Password.Font = new System.Drawing.Font("Verdana", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_Password.Location = new System.Drawing.Point(190, 237);
+            this.lbl_Password.Name = "lbl_Password";
+            this.lbl_Password.Size = new System.Drawing.Size(144, 29);
+            this.lbl_Password.TabIndex = 79;
+            this.lbl_Password.Text = "Password";
             // 
             // lbl_Username
             // 
@@ -139,16 +140,18 @@
             this.tb_Confirm_Password.Font = new System.Drawing.Font("Verdana", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tb_Confirm_Password.Location = new System.Drawing.Point(540, 312);
             this.tb_Confirm_Password.Name = "tb_Confirm_Password";
+            this.tb_Confirm_Password.PasswordChar = '*';
             this.tb_Confirm_Password.Size = new System.Drawing.Size(315, 35);
             this.tb_Confirm_Password.TabIndex = 76;
             // 
-            // tb_New_Password
+            // tb_Password
             // 
-            this.tb_New_Password.Font = new System.Drawing.Font("Verdana", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tb_New_Password.Location = new System.Drawing.Point(540, 231);
-            this.tb_New_Password.Name = "tb_New_Password";
-            this.tb_New_Password.Size = new System.Drawing.Size(315, 35);
-            this.tb_New_Password.TabIndex = 75;
+            this.tb_Password.Font = new System.Drawing.Font("Verdana", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tb_Password.Location = new System.Drawing.Point(540, 231);
+            this.tb_Password.Name = "tb_Password";
+            this.tb_Password.PasswordChar = '*';
+            this.tb_Password.Size = new System.Drawing.Size(315, 35);
+            this.tb_Password.TabIndex = 75;
             // 
             // tb_Username
             // 
@@ -170,6 +173,7 @@
             this.MinimizeBox = false;
             this.Name = "frm_Add_User";
             this.Text = "Add User";
+            this.Load += new System.EventHandler(this.frm_Add_User_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.groupBox1.ResumeLayout(false);
@@ -184,10 +188,10 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Label lbl_Confirm_Password;
-        private System.Windows.Forms.Label lbl_New_Password;
+        private System.Windows.Forms.Label lbl_Password;
         private System.Windows.Forms.Label lbl_Username;
         private System.Windows.Forms.TextBox tb_Confirm_Password;
-        private System.Windows.Forms.TextBox tb_New_Password;
+        private System.Windows.Forms.TextBox tb_Password;
         private System.Windows.Forms.TextBox tb_Username;
         private System.Windows.Forms.Button btn_Refresh;
         private System.Windows.Forms.Button btn_Add;

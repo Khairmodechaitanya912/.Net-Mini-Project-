@@ -35,9 +35,9 @@
             this.btn_Update = new System.Windows.Forms.Button();
             this.cmb_Username = new System.Windows.Forms.ComboBox();
             this.lbl_Username = new System.Windows.Forms.Label();
-            this.lbl_Confirm_Passwordd = new System.Windows.Forms.Label();
+            this.lbl_New_Password = new System.Windows.Forms.Label();
             this.lbl_Current_Password = new System.Windows.Forms.Label();
-            this.tb_Confirm_Password = new System.Windows.Forms.TextBox();
+            this.tb_New_Password = new System.Windows.Forms.TextBox();
             this.tb_Current_Password = new System.Windows.Forms.TextBox();
             this.panel1.SuspendLayout();
             this.groupBox1.SuspendLayout();
@@ -70,9 +70,9 @@
             this.groupBox1.Controls.Add(this.btn_Update);
             this.groupBox1.Controls.Add(this.cmb_Username);
             this.groupBox1.Controls.Add(this.lbl_Username);
-            this.groupBox1.Controls.Add(this.lbl_Confirm_Passwordd);
+            this.groupBox1.Controls.Add(this.lbl_New_Password);
             this.groupBox1.Controls.Add(this.lbl_Current_Password);
-            this.groupBox1.Controls.Add(this.tb_Confirm_Password);
+            this.groupBox1.Controls.Add(this.tb_New_Password);
             this.groupBox1.Controls.Add(this.tb_Current_Password);
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.Location = new System.Drawing.Point(447, 299);
@@ -80,7 +80,7 @@
             this.groupBox1.Size = new System.Drawing.Size(1013, 675);
             this.groupBox1.TabIndex = 76;
             this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Add User";
+            this.groupBox1.Text = "Change Password";
             // 
             // btn_Refresh
             // 
@@ -92,6 +92,7 @@
             this.btn_Refresh.TabIndex = 83;
             this.btn_Refresh.Text = "Refresh";
             this.btn_Refresh.UseVisualStyleBackColor = false;
+            this.btn_Refresh.Click += new System.EventHandler(this.btn_Refresh_Click);
             // 
             // btn_Update
             // 
@@ -99,10 +100,11 @@
             this.btn_Update.Font = new System.Drawing.Font("Verdana", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_Update.Location = new System.Drawing.Point(275, 476);
             this.btn_Update.Name = "btn_Update";
-            this.btn_Update.Size = new System.Drawing.Size(157, 59);
+            this.btn_Update.Size = new System.Drawing.Size(185, 59);
             this.btn_Update.TabIndex = 82;
             this.btn_Update.Text = "Update";
             this.btn_Update.UseVisualStyleBackColor = false;
+            this.btn_Update.Click += new System.EventHandler(this.btn_Update_Click);
             // 
             // cmb_Username
             // 
@@ -123,15 +125,15 @@
             this.lbl_Username.TabIndex = 67;
             this.lbl_Username.Text = "Username";
             // 
-            // lbl_Confirm_Passwordd
+            // lbl_New_Password
             // 
-            this.lbl_Confirm_Passwordd.AutoSize = true;
-            this.lbl_Confirm_Passwordd.Font = new System.Drawing.Font("Verdana", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_Confirm_Passwordd.Location = new System.Drawing.Point(190, 330);
-            this.lbl_Confirm_Passwordd.Name = "lbl_Confirm_Passwordd";
-            this.lbl_Confirm_Passwordd.Size = new System.Drawing.Size(257, 29);
-            this.lbl_Confirm_Passwordd.TabIndex = 80;
-            this.lbl_Confirm_Passwordd.Text = "Confirm Password";
+            this.lbl_New_Password.AutoSize = true;
+            this.lbl_New_Password.Font = new System.Drawing.Font("Verdana", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_New_Password.Location = new System.Drawing.Point(190, 330);
+            this.lbl_New_Password.Name = "lbl_New_Password";
+            this.lbl_New_Password.Size = new System.Drawing.Size(212, 29);
+            this.lbl_New_Password.TabIndex = 80;
+            this.lbl_New_Password.Text = "New Password";
             // 
             // lbl_Current_Password
             // 
@@ -143,13 +145,13 @@
             this.lbl_Current_Password.TabIndex = 79;
             this.lbl_Current_Password.Text = "Current Password";
             // 
-            // tb_Confirm_Password
+            // tb_New_Password
             // 
-            this.tb_Confirm_Password.Font = new System.Drawing.Font("Verdana", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tb_Confirm_Password.Location = new System.Drawing.Point(541, 324);
-            this.tb_Confirm_Password.Name = "tb_Confirm_Password";
-            this.tb_Confirm_Password.Size = new System.Drawing.Size(315, 35);
-            this.tb_Confirm_Password.TabIndex = 76;
+            this.tb_New_Password.Font = new System.Drawing.Font("Verdana", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tb_New_Password.Location = new System.Drawing.Point(541, 324);
+            this.tb_New_Password.Name = "tb_New_Password";
+            this.tb_New_Password.Size = new System.Drawing.Size(315, 35);
+            this.tb_New_Password.TabIndex = 76;
             // 
             // tb_Current_Password
             // 
@@ -171,6 +173,7 @@
             this.MinimizeBox = false;
             this.Name = "frm_Update_User";
             this.Text = "Change Password";
+            this.Load += new System.EventHandler(this.frm_Update_User_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.groupBox1.ResumeLayout(false);
@@ -188,9 +191,9 @@
         private System.Windows.Forms.Button btn_Update;
         private System.Windows.Forms.ComboBox cmb_Username;
         private System.Windows.Forms.Label lbl_Username;
-        private System.Windows.Forms.Label lbl_Confirm_Passwordd;
+        private System.Windows.Forms.Label lbl_New_Password;
         private System.Windows.Forms.Label lbl_Current_Password;
-        private System.Windows.Forms.TextBox tb_Confirm_Password;
+        private System.Windows.Forms.TextBox tb_New_Password;
         private System.Windows.Forms.TextBox tb_Current_Password;
     }
 }

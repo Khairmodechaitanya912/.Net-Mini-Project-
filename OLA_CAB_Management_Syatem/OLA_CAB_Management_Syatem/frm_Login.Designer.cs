@@ -43,7 +43,7 @@
             this.btn_SingIn.Location = new System.Drawing.Point(805, 382);
             this.btn_SingIn.Name = "btn_SingIn";
             this.btn_SingIn.Size = new System.Drawing.Size(175, 50);
-            this.btn_SingIn.TabIndex = 0;
+            this.btn_SingIn.TabIndex = 3;
             this.btn_SingIn.Text = "Sign In";
             this.btn_SingIn.UseVisualStyleBackColor = true;
             this.btn_SingIn.Click += new System.EventHandler(this.btn_SingIn_Click);
@@ -76,7 +76,7 @@
             this.tb_Username.Location = new System.Drawing.Point(875, 215);
             this.tb_Username.Name = "tb_Username";
             this.tb_Username.Size = new System.Drawing.Size(278, 29);
-            this.tb_Username.TabIndex = 2;
+            this.tb_Username.TabIndex = 1;
             this.tb_Username.TextChanged += new System.EventHandler(this.tb_Username_TextChanged);
             // 
             // tb_Password

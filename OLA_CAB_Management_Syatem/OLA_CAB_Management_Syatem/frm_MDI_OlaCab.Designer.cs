@@ -288,7 +288,7 @@
             // 
             this.lbl_User_Logged_In.AutoSize = true;
             this.lbl_User_Logged_In.Font = new System.Drawing.Font("Mongolian Baiti", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_User_Logged_In.Location = new System.Drawing.Point(1547, 18);
+            this.lbl_User_Logged_In.Location = new System.Drawing.Point(1598, 18);
             this.lbl_User_Logged_In.Name = "lbl_User_Logged_In";
             this.lbl_User_Logged_In.Size = new System.Drawing.Size(144, 25);
             this.lbl_User_Logged_In.TabIndex = 3;

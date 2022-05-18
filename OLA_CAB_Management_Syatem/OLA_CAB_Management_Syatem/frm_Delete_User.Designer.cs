@@ -30,8 +30,8 @@
         {
             this.btn_Delete = new System.Windows.Forms.Button();
             this.lbl_Username = new System.Windows.Forms.Label();
-            this.lbl_Confirm_Passwordd = new System.Windows.Forms.Label();
-            this.tb_Confirm_Password = new System.Windows.Forms.TextBox();
+            this.lbl_Password = new System.Windows.Forms.Label();
+            this.tb_Password = new System.Windows.Forms.TextBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
             this.gb_Delete = new System.Windows.Forms.GroupBox();
@@ -50,6 +50,7 @@
             this.btn_Delete.TabIndex = 82;
             this.btn_Delete.Text = "Delete";
             this.btn_Delete.UseVisualStyleBackColor = false;
+            this.btn_Delete.Click += new System.EventHandler(this.btn_Delete_Click);
             // 
             // lbl_Username
             // 
@@ -61,23 +62,23 @@
             this.lbl_Username.TabIndex = 67;
             this.lbl_Username.Text = "Username";
             // 
-            // lbl_Confirm_Passwordd
+            // lbl_Password
             // 
-            this.lbl_Confirm_Passwordd.AutoSize = true;
-            this.lbl_Confirm_Passwordd.Font = new System.Drawing.Font("Verdana", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_Confirm_Passwordd.Location = new System.Drawing.Point(189, 256);
-            this.lbl_Confirm_Passwordd.Name = "lbl_Confirm_Passwordd";
-            this.lbl_Confirm_Passwordd.Size = new System.Drawing.Size(257, 29);
-            this.lbl_Confirm_Passwordd.TabIndex = 80;
-            this.lbl_Confirm_Passwordd.Text = "Confirm Password";
+            this.lbl_Password.AutoSize = true;
+            this.lbl_Password.Font = new System.Drawing.Font("Verdana", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_Password.Location = new System.Drawing.Point(189, 256);
+            this.lbl_Password.Name = "lbl_Password";
+            this.lbl_Password.Size = new System.Drawing.Size(144, 29);
+            this.lbl_Password.TabIndex = 80;
+            this.lbl_Password.Text = "Password";
             // 
-            // tb_Confirm_Password
+            // tb_Password
             // 
-            this.tb_Confirm_Password.Font = new System.Drawing.Font("Verdana", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tb_Confirm_Password.Location = new System.Drawing.Point(540, 250);
-            this.tb_Confirm_Password.Name = "tb_Confirm_Password";
-            this.tb_Confirm_Password.Size = new System.Drawing.Size(315, 35);
-            this.tb_Confirm_Password.TabIndex = 76;
+            this.tb_Password.Font = new System.Drawing.Font("Verdana", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tb_Password.Location = new System.Drawing.Point(540, 250);
+            this.tb_Password.Name = "tb_Password";
+            this.tb_Password.Size = new System.Drawing.Size(315, 35);
+            this.tb_Password.TabIndex = 76;
             // 
             // panel1
             // 
@@ -105,8 +106,8 @@
             this.gb_Delete.Controls.Add(this.tb_Username);
             this.gb_Delete.Controls.Add(this.btn_Delete);
             this.gb_Delete.Controls.Add(this.lbl_Username);
-            this.gb_Delete.Controls.Add(this.lbl_Confirm_Passwordd);
-            this.gb_Delete.Controls.Add(this.tb_Confirm_Password);
+            this.gb_Delete.Controls.Add(this.lbl_Password);
+            this.gb_Delete.Controls.Add(this.tb_Password);
             this.gb_Delete.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gb_Delete.Location = new System.Drawing.Point(443, 298);
             this.gb_Delete.Name = "gb_Delete";
@@ -135,6 +136,7 @@
             this.MinimizeBox = false;
             this.Name = "frm_Delete_User";
             this.Text = "Delete User";
+            this.Load += new System.EventHandler(this.frm_Delete_User_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.gb_Delete.ResumeLayout(false);
@@ -147,8 +149,8 @@
 
         private System.Windows.Forms.Button btn_Delete;
         private System.Windows.Forms.Label lbl_Username;
-        private System.Windows.Forms.Label lbl_Confirm_Passwordd;
-        private System.Windows.Forms.TextBox tb_Confirm_Password;
+        private System.Windows.Forms.Label lbl_Password;
+        private System.Windows.Forms.TextBox tb_Password;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.GroupBox gb_Delete;

@@ -33,10 +33,10 @@
             this.btn_Save = new System.Windows.Forms.Button();
             this.lbl_Kmper_Price = new System.Windows.Forms.Label();
             this.tb_Kmper_Price = new System.Windows.Forms.TextBox();
-            this.lbl_Vehicle_No = new System.Windows.Forms.Label();
+            this.lbl_kilometer = new System.Windows.Forms.Label();
             this.lbl_Name = new System.Windows.Forms.Label();
             this.lbl_Area_Id = new System.Windows.Forms.Label();
-            this.tb_Age = new System.Windows.Forms.TextBox();
+            this.tb_kilometer = new System.Windows.Forms.TextBox();
             this.tb_Name = new System.Windows.Forms.TextBox();
             this.tb_Area_Id = new System.Windows.Forms.TextBox();
             this.panel1 = new System.Windows.Forms.Panel();
@@ -52,10 +52,10 @@
             this.gb_Area.Controls.Add(this.btn_Save);
             this.gb_Area.Controls.Add(this.lbl_Kmper_Price);
             this.gb_Area.Controls.Add(this.tb_Kmper_Price);
-            this.gb_Area.Controls.Add(this.lbl_Vehicle_No);
+            this.gb_Area.Controls.Add(this.lbl_kilometer);
             this.gb_Area.Controls.Add(this.lbl_Name);
             this.gb_Area.Controls.Add(this.lbl_Area_Id);
-            this.gb_Area.Controls.Add(this.tb_Age);
+            this.gb_Area.Controls.Add(this.tb_kilometer);
             this.gb_Area.Controls.Add(this.tb_Name);
             this.gb_Area.Controls.Add(this.tb_Area_Id);
             this.gb_Area.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -76,6 +76,7 @@
             this.btn_Refresh.TabIndex = 74;
             this.btn_Refresh.Text = "Refresh";
             this.btn_Refresh.UseVisualStyleBackColor = false;
+            this.btn_Refresh.Click += new System.EventHandler(this.btn_Refresh_Click);
             // 
             // btn_Save
             // 
@@ -87,6 +88,7 @@
             this.btn_Save.TabIndex = 73;
             this.btn_Save.Text = "Save";
             this.btn_Save.UseVisualStyleBackColor = false;
+            this.btn_Save.Click += new System.EventHandler(this.btn_Save_Click);
             // 
             // lbl_Kmper_Price
             // 
@@ -105,16 +107,17 @@
             this.tb_Kmper_Price.Name = "tb_Kmper_Price";
             this.tb_Kmper_Price.Size = new System.Drawing.Size(251, 35);
             this.tb_Kmper_Price.TabIndex = 58;
+            this.tb_Kmper_Price.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Only_Numeric);
             // 
-            // lbl_Vehicle_No
+            // lbl_kilometer
             // 
-            this.lbl_Vehicle_No.AutoSize = true;
-            this.lbl_Vehicle_No.Font = new System.Drawing.Font("Verdana", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_Vehicle_No.Location = new System.Drawing.Point(190, 290);
-            this.lbl_Vehicle_No.Name = "lbl_Vehicle_No";
-            this.lbl_Vehicle_No.Size = new System.Drawing.Size(144, 29);
-            this.lbl_Vehicle_No.TabIndex = 57;
-            this.lbl_Vehicle_No.Text = "Kilometer";
+            this.lbl_kilometer.AutoSize = true;
+            this.lbl_kilometer.Font = new System.Drawing.Font("Verdana", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_kilometer.Location = new System.Drawing.Point(190, 290);
+            this.lbl_kilometer.Name = "lbl_kilometer";
+            this.lbl_kilometer.Size = new System.Drawing.Size(144, 29);
+            this.lbl_kilometer.TabIndex = 57;
+            this.lbl_kilometer.Text = "Kilometer";
             // 
             // lbl_Name
             // 
@@ -136,13 +139,14 @@
             this.lbl_Area_Id.TabIndex = 55;
             this.lbl_Area_Id.Text = "Area ID";
             // 
-            // tb_Age
+            // tb_kilometer
             // 
-            this.tb_Age.Font = new System.Drawing.Font("Verdana", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tb_Age.Location = new System.Drawing.Point(509, 294);
-            this.tb_Age.Name = "tb_Age";
-            this.tb_Age.Size = new System.Drawing.Size(251, 35);
-            this.tb_Age.TabIndex = 52;
+            this.tb_kilometer.Font = new System.Drawing.Font("Verdana", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tb_kilometer.Location = new System.Drawing.Point(509, 294);
+            this.tb_kilometer.Name = "tb_kilometer";
+            this.tb_kilometer.Size = new System.Drawing.Size(251, 35);
+            this.tb_kilometer.TabIndex = 52;
+            this.tb_kilometer.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Only_Numeric);
             // 
             // tb_Name
             // 
@@ -154,6 +158,7 @@
             // 
             // tb_Area_Id
             // 
+            this.tb_Area_Id.Enabled = false;
             this.tb_Area_Id.Font = new System.Drawing.Font("Verdana", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tb_Area_Id.Location = new System.Drawing.Point(509, 133);
             this.tb_Area_Id.Name = "tb_Area_Id";
@@ -190,6 +195,7 @@
             this.Controls.Add(this.gb_Area);
             this.Name = "frm_Add_Area";
             this.Text = "Add Area";
+            this.Load += new System.EventHandler(this.frm_Add_Area_Load);
             this.gb_Area.ResumeLayout(false);
             this.gb_Area.PerformLayout();
             this.panel1.ResumeLayout(false);
@@ -203,10 +209,10 @@
         private System.Windows.Forms.GroupBox gb_Area;
         private System.Windows.Forms.Label lbl_Kmper_Price;
         private System.Windows.Forms.TextBox tb_Kmper_Price;
-        private System.Windows.Forms.Label lbl_Vehicle_No;
+        private System.Windows.Forms.Label lbl_kilometer;
         private System.Windows.Forms.Label lbl_Name;
         private System.Windows.Forms.Label lbl_Area_Id;
-        private System.Windows.Forms.TextBox tb_Age;
+        private System.Windows.Forms.TextBox tb_kilometer;
         private System.Windows.Forms.TextBox tb_Name;
         private System.Windows.Forms.TextBox tb_Area_Id;
         private System.Windows.Forms.Button btn_Refresh;

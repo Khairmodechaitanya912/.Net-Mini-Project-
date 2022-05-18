@@ -126,5 +126,10 @@ namespace OLA_CAB_Management_Syatem
                 e.Handled = true;
             }
         }
+
+        private void dtp_Date_ValueChanged(object sender, EventArgs e)
+        {
+            dtp_Date.MinDate = dtp_Date.MaxDate = DateTime.Now;
+        }
     }
 }
