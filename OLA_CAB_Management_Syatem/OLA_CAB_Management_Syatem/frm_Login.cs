@@ -54,6 +54,11 @@ namespace OLA_CAB_Management_Syatem
             {
                 Global_Vars.Uname = tb_Username.Text;
 
+                if (tb_Username.Text == "Admin")
+                {
+                    Global_Vars.User_Role = 1;
+                }
+
                 MessageBox.Show(" Login Successful...!! ", "Opening", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
                 frm_MDI_OlaCab mo = new frm_MDI_OlaCab();

@@ -28,6 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frm_MDI_OlaCab));
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.customerToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.addPassengerToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -58,7 +60,12 @@
             this.driverDetailsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.lbl_User_Logged_In = new System.Windows.Forms.Label();
             this.btn_Logout = new System.Windows.Forms.Button();
+            this.pnl_Back_Slider = new System.Windows.Forms.Panel();
+            this.pb_Slider = new System.Windows.Forms.PictureBox();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.menuStrip1.SuspendLayout();
+            this.pnl_Back_Slider.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pb_Slider)).BeginInit();
             this.SuspendLayout();
             // 
             // menuStrip1
@@ -86,6 +93,7 @@
             this.customerToolStripMenuItem.Name = "customerToolStripMenuItem";
             this.customerToolStripMenuItem.Size = new System.Drawing.Size(140, 51);
             this.customerToolStripMenuItem.Text = "Passenger";
+            this.customerToolStripMenuItem.Visible = false;
             // 
             // addPassengerToolStripMenuItem
             // 
@@ -141,6 +149,7 @@
             this.vehicalToolStripMenuItem.Name = "vehicalToolStripMenuItem";
             this.vehicalToolStripMenuItem.Size = new System.Drawing.Size(105, 51);
             this.vehicalToolStripMenuItem.Text = "Vehical";
+            this.vehicalToolStripMenuItem.Visible = false;
             // 
             // addVehicalToolStripMenuItem
             // 
@@ -165,6 +174,7 @@
             this.driverToolStripMenuItem.Name = "driverToolStripMenuItem";
             this.driverToolStripMenuItem.Size = new System.Drawing.Size(94, 51);
             this.driverToolStripMenuItem.Text = "Driver";
+            this.driverToolStripMenuItem.Visible = false;
             // 
             // addDriverToolStripMenuItem
             // 
@@ -196,6 +206,7 @@
             this.areaToolStripMenuItem.Name = "areaToolStripMenuItem";
             this.areaToolStripMenuItem.Size = new System.Drawing.Size(76, 51);
             this.areaToolStripMenuItem.Text = "Area";
+            this.areaToolStripMenuItem.Visible = false;
             // 
             // addAreaToolStripMenuItem
             // 
@@ -227,6 +238,7 @@
             this.userManagementToolStripMenuItem.Name = "userManagementToolStripMenuItem";
             this.userManagementToolStripMenuItem.Size = new System.Drawing.Size(225, 51);
             this.userManagementToolStripMenuItem.Text = "User Management";
+            this.userManagementToolStripMenuItem.Visible = false;
             // 
             // addUserToolStripMenuItem
             // 
@@ -259,6 +271,7 @@
             this.reportToolStripMenuItem.Name = "reportToolStripMenuItem";
             this.reportToolStripMenuItem.Size = new System.Drawing.Size(100, 51);
             this.reportToolStripMenuItem.Text = "Report";
+            this.reportToolStripMenuItem.Visible = false;
             // 
             // bIkePassengerToolStripMenuItem
             // 
@@ -307,12 +320,39 @@
             this.btn_Logout.UseVisualStyleBackColor = false;
             this.btn_Logout.Click += new System.EventHandler(this.btn_Logout_Click);
             // 
+            // pnl_Back_Slider
+            // 
+            this.pnl_Back_Slider.Controls.Add(this.pb_Slider);
+            this.pnl_Back_Slider.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pnl_Back_Slider.Location = new System.Drawing.Point(0, 55);
+            this.pnl_Back_Slider.Name = "pnl_Back_Slider";
+            this.pnl_Back_Slider.Size = new System.Drawing.Size(1924, 1000);
+            this.pnl_Back_Slider.TabIndex = 76;
+            // 
+            // pb_Slider
+            // 
+            this.pb_Slider.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pb_Slider.Image = ((System.Drawing.Image)(resources.GetObject("pb_Slider.Image")));
+            this.pb_Slider.Location = new System.Drawing.Point(0, 0);
+            this.pb_Slider.Name = "pb_Slider";
+            this.pb_Slider.Size = new System.Drawing.Size(1924, 1000);
+            this.pb_Slider.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pb_Slider.TabIndex = 0;
+            this.pb_Slider.TabStop = false;
+            // 
+            // timer1
+            // 
+            this.timer1.Enabled = true;
+            this.timer1.Interval = 1000;
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            // 
             // frm_MDI_OlaCab
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Control;
             this.ClientSize = new System.Drawing.Size(1924, 1055);
+            this.Controls.Add(this.pnl_Back_Slider);
             this.Controls.Add(this.btn_Logout);
             this.Controls.Add(this.lbl_User_Logged_In);
             this.Controls.Add(this.menuStrip1);
@@ -326,6 +366,8 @@
             this.Load += new System.EventHandler(this.frm_MDI_OlaCab_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
+            this.pnl_Back_Slider.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pb_Slider)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -363,5 +405,8 @@
         private System.Windows.Forms.ToolStripMenuItem driverDetailsToolStripMenuItem;
         private System.Windows.Forms.Label lbl_User_Logged_In;
         private System.Windows.Forms.Button btn_Logout;
+        private System.Windows.Forms.Panel pnl_Back_Slider;
+        private System.Windows.Forms.PictureBox pb_Slider;
+        private System.Windows.Forms.Timer timer1;
     }
 }

@@ -57,7 +57,7 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Malgun Gothic", 50F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(752, -9);
+            this.label2.Location = new System.Drawing.Point(786, -9);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(421, 112);
             this.label2.TabIndex = 12;
@@ -77,8 +77,8 @@
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.Location = new System.Drawing.Point(465, 216);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(1013, 675);
-            this.groupBox1.TabIndex = 75;
+            this.groupBox1.Size = new System.Drawing.Size(1029, 605);
+            this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Add User";
             // 
@@ -86,10 +86,10 @@
             // 
             this.btn_Refresh.BackColor = System.Drawing.Color.Yellow;
             this.btn_Refresh.Font = new System.Drawing.Font("Verdana", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_Refresh.Location = new System.Drawing.Point(571, 476);
+            this.btn_Refresh.Location = new System.Drawing.Point(621, 447);
             this.btn_Refresh.Name = "btn_Refresh";
             this.btn_Refresh.Size = new System.Drawing.Size(208, 59);
-            this.btn_Refresh.TabIndex = 83;
+            this.btn_Refresh.TabIndex = 5;
             this.btn_Refresh.Text = "Refresh";
             this.btn_Refresh.UseVisualStyleBackColor = false;
             // 
@@ -97,10 +97,10 @@
             // 
             this.btn_Add.BackColor = System.Drawing.Color.Yellow;
             this.btn_Add.Font = new System.Drawing.Font("Verdana", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_Add.Location = new System.Drawing.Point(227, 476);
+            this.btn_Add.Location = new System.Drawing.Point(277, 447);
             this.btn_Add.Name = "btn_Add";
             this.btn_Add.Size = new System.Drawing.Size(157, 59);
-            this.btn_Add.TabIndex = 82;
+            this.btn_Add.TabIndex = 4;
             this.btn_Add.Text = "Add";
             this.btn_Add.UseVisualStyleBackColor = false;
             this.btn_Add.Click += new System.EventHandler(this.btn_Add_Click);
@@ -142,7 +142,7 @@
             this.tb_Confirm_Password.Name = "tb_Confirm_Password";
             this.tb_Confirm_Password.PasswordChar = '*';
             this.tb_Confirm_Password.Size = new System.Drawing.Size(315, 35);
-            this.tb_Confirm_Password.TabIndex = 76;
+            this.tb_Confirm_Password.TabIndex = 3;
             // 
             // tb_Password
             // 
@@ -151,7 +151,7 @@
             this.tb_Password.Name = "tb_Password";
             this.tb_Password.PasswordChar = '*';
             this.tb_Password.Size = new System.Drawing.Size(315, 35);
-            this.tb_Password.TabIndex = 75;
+            this.tb_Password.TabIndex = 2;
             // 
             // tb_Username
             // 
@@ -159,7 +159,7 @@
             this.tb_Username.Location = new System.Drawing.Point(540, 151);
             this.tb_Username.Name = "tb_Username";
             this.tb_Username.Size = new System.Drawing.Size(315, 35);
-            this.tb_Username.TabIndex = 74;
+            this.tb_Username.TabIndex = 1;
             // 
             // frm_Add_User
             // 

@@ -47,7 +47,7 @@
             this.btn_Delete.Location = new System.Drawing.Point(391, 398);
             this.btn_Delete.Name = "btn_Delete";
             this.btn_Delete.Size = new System.Drawing.Size(157, 59);
-            this.btn_Delete.TabIndex = 82;
+            this.btn_Delete.TabIndex = 4;
             this.btn_Delete.Text = "Delete";
             this.btn_Delete.UseVisualStyleBackColor = false;
             this.btn_Delete.Click += new System.EventHandler(this.btn_Delete_Click);
@@ -78,7 +78,7 @@
             this.tb_Password.Location = new System.Drawing.Point(540, 250);
             this.tb_Password.Name = "tb_Password";
             this.tb_Password.Size = new System.Drawing.Size(315, 35);
-            this.tb_Password.TabIndex = 76;
+            this.tb_Password.TabIndex = 3;
             // 
             // panel1
             // 
@@ -94,7 +94,7 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Malgun Gothic", 50F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(627, -16);
+            this.label2.Location = new System.Drawing.Point(688, -16);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(512, 112);
             this.label2.TabIndex = 12;
@@ -109,10 +109,10 @@
             this.gb_Delete.Controls.Add(this.lbl_Password);
             this.gb_Delete.Controls.Add(this.tb_Password);
             this.gb_Delete.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gb_Delete.Location = new System.Drawing.Point(443, 298);
+            this.gb_Delete.Location = new System.Drawing.Point(443, 221);
             this.gb_Delete.Name = "gb_Delete";
             this.gb_Delete.Size = new System.Drawing.Size(1013, 539);
-            this.gb_Delete.TabIndex = 78;
+            this.gb_Delete.TabIndex = 1;
             this.gb_Delete.TabStop = false;
             this.gb_Delete.Text = "Delete User";
             // 
@@ -122,7 +122,7 @@
             this.tb_Username.Location = new System.Drawing.Point(540, 156);
             this.tb_Username.Name = "tb_Username";
             this.tb_Username.Size = new System.Drawing.Size(315, 35);
-            this.tb_Username.TabIndex = 79;
+            this.tb_Username.TabIndex = 1;
             // 
             // frm_Delete_User
             // 

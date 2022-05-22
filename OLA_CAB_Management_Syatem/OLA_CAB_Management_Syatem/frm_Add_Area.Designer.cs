@@ -73,7 +73,7 @@
             this.btn_Refresh.Location = new System.Drawing.Point(543, 529);
             this.btn_Refresh.Name = "btn_Refresh";
             this.btn_Refresh.Size = new System.Drawing.Size(208, 59);
-            this.btn_Refresh.TabIndex = 74;
+            this.btn_Refresh.TabIndex = 6;
             this.btn_Refresh.Text = "Refresh";
             this.btn_Refresh.UseVisualStyleBackColor = false;
             this.btn_Refresh.Click += new System.EventHandler(this.btn_Refresh_Click);
@@ -85,7 +85,7 @@
             this.btn_Save.Location = new System.Drawing.Point(199, 529);
             this.btn_Save.Name = "btn_Save";
             this.btn_Save.Size = new System.Drawing.Size(157, 59);
-            this.btn_Save.TabIndex = 73;
+            this.btn_Save.TabIndex = 5;
             this.btn_Save.Text = "Save";
             this.btn_Save.UseVisualStyleBackColor = false;
             this.btn_Save.Click += new System.EventHandler(this.btn_Save_Click);
@@ -106,7 +106,7 @@
             this.tb_Kmper_Price.Location = new System.Drawing.Point(509, 375);
             this.tb_Kmper_Price.Name = "tb_Kmper_Price";
             this.tb_Kmper_Price.Size = new System.Drawing.Size(251, 35);
-            this.tb_Kmper_Price.TabIndex = 58;
+            this.tb_Kmper_Price.TabIndex = 4;
             this.tb_Kmper_Price.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Only_Numeric);
             // 
             // lbl_kilometer
@@ -145,7 +145,7 @@
             this.tb_kilometer.Location = new System.Drawing.Point(509, 294);
             this.tb_kilometer.Name = "tb_kilometer";
             this.tb_kilometer.Size = new System.Drawing.Size(251, 35);
-            this.tb_kilometer.TabIndex = 52;
+            this.tb_kilometer.TabIndex = 3;
             this.tb_kilometer.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Only_Numeric);
             // 
             // tb_Name
@@ -154,7 +154,7 @@
             this.tb_Name.Location = new System.Drawing.Point(509, 216);
             this.tb_Name.Name = "tb_Name";
             this.tb_Name.Size = new System.Drawing.Size(251, 35);
-            this.tb_Name.TabIndex = 50;
+            this.tb_Name.TabIndex = 2;
             // 
             // tb_Area_Id
             // 
@@ -163,7 +163,7 @@
             this.tb_Area_Id.Location = new System.Drawing.Point(509, 133);
             this.tb_Area_Id.Name = "tb_Area_Id";
             this.tb_Area_Id.Size = new System.Drawing.Size(251, 35);
-            this.tb_Area_Id.TabIndex = 51;
+            this.tb_Area_Id.TabIndex = 1;
             // 
             // panel1
             // 
@@ -179,7 +179,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Malgun Gothic", 50F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(685, -8);
+            this.label1.Location = new System.Drawing.Point(772, -8);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(426, 112);
             this.label1.TabIndex = 13;

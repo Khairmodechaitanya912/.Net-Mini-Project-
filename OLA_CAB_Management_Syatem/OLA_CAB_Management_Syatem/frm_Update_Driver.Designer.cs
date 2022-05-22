@@ -63,7 +63,7 @@
             this.btn_Refresh.Location = new System.Drawing.Point(880, 594);
             this.btn_Refresh.Name = "btn_Refresh";
             this.btn_Refresh.Size = new System.Drawing.Size(208, 59);
-            this.btn_Refresh.TabIndex = 72;
+            this.btn_Refresh.TabIndex = 12;
             this.btn_Refresh.Text = "Refresh";
             this.btn_Refresh.UseVisualStyleBackColor = false;
             this.btn_Refresh.Click += new System.EventHandler(this.btn_Refresh_Click);
@@ -75,7 +75,7 @@
             this.btn_Update.Location = new System.Drawing.Point(536, 594);
             this.btn_Update.Name = "btn_Update";
             this.btn_Update.Size = new System.Drawing.Size(202, 59);
-            this.btn_Update.TabIndex = 71;
+            this.btn_Update.TabIndex = 11;
             this.btn_Update.Text = "Update";
             this.btn_Update.UseVisualStyleBackColor = false;
             this.btn_Update.Click += new System.EventHandler(this.btn_Update_Click);
@@ -96,7 +96,7 @@
             this.tb_Charges.Location = new System.Drawing.Point(1068, 485);
             this.tb_Charges.Name = "tb_Charges";
             this.tb_Charges.Size = new System.Drawing.Size(327, 35);
-            this.tb_Charges.TabIndex = 69;
+            this.tb_Charges.TabIndex = 10;
             this.tb_Charges.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Only_Numerics);
             // 
             // lbl_Address
@@ -190,7 +190,7 @@
             this.tb_Address.Location = new System.Drawing.Point(1068, 280);
             this.tb_Address.Name = "tb_Address";
             this.tb_Address.Size = new System.Drawing.Size(327, 35);
-            this.tb_Address.TabIndex = 52;
+            this.tb_Address.TabIndex = 8;
             // 
             // tb_Email_ID
             // 
@@ -198,7 +198,7 @@
             this.tb_Email_ID.Location = new System.Drawing.Point(1068, 178);
             this.tb_Email_ID.Name = "tb_Email_ID";
             this.tb_Email_ID.Size = new System.Drawing.Size(327, 35);
-            this.tb_Email_ID.TabIndex = 53;
+            this.tb_Email_ID.TabIndex = 7;
             // 
             // tb_Experience
             // 
@@ -206,7 +206,7 @@
             this.tb_Experience.Location = new System.Drawing.Point(1068, 393);
             this.tb_Experience.Name = "tb_Experience";
             this.tb_Experience.Size = new System.Drawing.Size(327, 35);
-            this.tb_Experience.TabIndex = 50;
+            this.tb_Experience.TabIndex = 9;
             // 
             // tb_Alternate_Mobile_No
             // 
@@ -214,7 +214,7 @@
             this.tb_Alternate_Mobile_No.Location = new System.Drawing.Point(471, 485);
             this.tb_Alternate_Mobile_No.Name = "tb_Alternate_Mobile_No";
             this.tb_Alternate_Mobile_No.Size = new System.Drawing.Size(328, 35);
-            this.tb_Alternate_Mobile_No.TabIndex = 57;
+            this.tb_Alternate_Mobile_No.TabIndex = 6;
             this.tb_Alternate_Mobile_No.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Only_Numerics);
             // 
             // lbl_Header
@@ -222,7 +222,7 @@
             this.lbl_Header.AutoSize = true;
             this.lbl_Header.Font = new System.Drawing.Font("Malgun Gothic", 50F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_Header.ForeColor = System.Drawing.Color.White;
-            this.lbl_Header.Location = new System.Drawing.Point(623, -10);
+            this.lbl_Header.Location = new System.Drawing.Point(630, -10);
             this.lbl_Header.Name = "lbl_Header";
             this.lbl_Header.Size = new System.Drawing.Size(611, 112);
             this.lbl_Header.TabIndex = 12;
@@ -234,7 +234,7 @@
             this.tb_Mobile_No.Location = new System.Drawing.Point(471, 387);
             this.tb_Mobile_No.Name = "tb_Mobile_No";
             this.tb_Mobile_No.Size = new System.Drawing.Size(328, 35);
-            this.tb_Mobile_No.TabIndex = 58;
+            this.tb_Mobile_No.TabIndex = 5;
             this.tb_Mobile_No.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Only_Numerics);
             // 
             // tb_Age
@@ -243,7 +243,7 @@
             this.tb_Age.Location = new System.Drawing.Point(471, 277);
             this.tb_Age.Name = "tb_Age";
             this.tb_Age.Size = new System.Drawing.Size(328, 35);
-            this.tb_Age.TabIndex = 56;
+            this.tb_Age.TabIndex = 4;
             this.tb_Age.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Only_Numerics);
             // 
             // tb_Name
@@ -252,7 +252,7 @@
             this.tb_Name.Location = new System.Drawing.Point(471, 178);
             this.tb_Name.Name = "tb_Name";
             this.tb_Name.Size = new System.Drawing.Size(328, 35);
-            this.tb_Name.TabIndex = 54;
+            this.tb_Name.TabIndex = 3;
             this.tb_Name.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Only_Char);
             // 
             // tb_Driver_ID
@@ -261,7 +261,7 @@
             this.tb_Driver_ID.Location = new System.Drawing.Point(630, 54);
             this.tb_Driver_ID.Name = "tb_Driver_ID";
             this.tb_Driver_ID.Size = new System.Drawing.Size(251, 35);
-            this.tb_Driver_ID.TabIndex = 55;
+            this.tb_Driver_ID.TabIndex = 1;
             this.tb_Driver_ID.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Only_Numerics);
             // 
             // gb_Driver
@@ -292,7 +292,7 @@
             this.gb_Driver.Location = new System.Drawing.Point(263, 201);
             this.gb_Driver.Name = "gb_Driver";
             this.gb_Driver.Size = new System.Drawing.Size(1504, 675);
-            this.gb_Driver.TabIndex = 51;
+            this.gb_Driver.TabIndex = 0;
             this.gb_Driver.TabStop = false;
             this.gb_Driver.Text = "Driver Details";
             // 
@@ -303,7 +303,7 @@
             this.btn_Search.Location = new System.Drawing.Point(954, 38);
             this.btn_Search.Name = "btn_Search";
             this.btn_Search.Size = new System.Drawing.Size(214, 59);
-            this.btn_Search.TabIndex = 73;
+            this.btn_Search.TabIndex = 2;
             this.btn_Search.Text = "Search";
             this.btn_Search.UseVisualStyleBackColor = false;
             this.btn_Search.Click += new System.EventHandler(this.btn_Search_Click);

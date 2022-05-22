@@ -57,7 +57,7 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Malgun Gothic", 50F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(627, -16);
+            this.label2.Location = new System.Drawing.Point(642, -16);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(759, 112);
             this.label2.TabIndex = 12;
@@ -75,10 +75,10 @@
             this.groupBox1.Controls.Add(this.tb_New_Password);
             this.groupBox1.Controls.Add(this.tb_Current_Password);
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox1.Location = new System.Drawing.Point(447, 299);
+            this.groupBox1.Location = new System.Drawing.Point(453, 270);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(1013, 675);
-            this.groupBox1.TabIndex = 76;
+            this.groupBox1.Size = new System.Drawing.Size(1013, 550);
+            this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Change Password";
             // 
@@ -86,10 +86,10 @@
             // 
             this.btn_Refresh.BackColor = System.Drawing.Color.Yellow;
             this.btn_Refresh.Font = new System.Drawing.Font("Verdana", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_Refresh.Location = new System.Drawing.Point(571, 476);
+            this.btn_Refresh.Location = new System.Drawing.Point(580, 444);
             this.btn_Refresh.Name = "btn_Refresh";
             this.btn_Refresh.Size = new System.Drawing.Size(208, 59);
-            this.btn_Refresh.TabIndex = 83;
+            this.btn_Refresh.TabIndex = 5;
             this.btn_Refresh.Text = "Refresh";
             this.btn_Refresh.UseVisualStyleBackColor = false;
             this.btn_Refresh.Click += new System.EventHandler(this.btn_Refresh_Click);
@@ -98,10 +98,10 @@
             // 
             this.btn_Update.BackColor = System.Drawing.Color.Yellow;
             this.btn_Update.Font = new System.Drawing.Font("Verdana", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_Update.Location = new System.Drawing.Point(275, 476);
+            this.btn_Update.Location = new System.Drawing.Point(284, 444);
             this.btn_Update.Name = "btn_Update";
             this.btn_Update.Size = new System.Drawing.Size(185, 59);
-            this.btn_Update.TabIndex = 82;
+            this.btn_Update.TabIndex = 4;
             this.btn_Update.Text = "Update";
             this.btn_Update.UseVisualStyleBackColor = false;
             this.btn_Update.Click += new System.EventHandler(this.btn_Update_Click);
@@ -113,7 +113,7 @@
             this.cmb_Username.Location = new System.Drawing.Point(540, 135);
             this.cmb_Username.Name = "cmb_Username";
             this.cmb_Username.Size = new System.Drawing.Size(315, 36);
-            this.cmb_Username.TabIndex = 73;
+            this.cmb_Username.TabIndex = 1;
             // 
             // lbl_Username
             // 
@@ -151,7 +151,7 @@
             this.tb_New_Password.Location = new System.Drawing.Point(541, 324);
             this.tb_New_Password.Name = "tb_New_Password";
             this.tb_New_Password.Size = new System.Drawing.Size(315, 35);
-            this.tb_New_Password.TabIndex = 76;
+            this.tb_New_Password.TabIndex = 3;
             // 
             // tb_Current_Password
             // 
@@ -159,7 +159,7 @@
             this.tb_Current_Password.Location = new System.Drawing.Point(540, 231);
             this.tb_Current_Password.Name = "tb_Current_Password";
             this.tb_Current_Password.Size = new System.Drawing.Size(315, 35);
-            this.tb_Current_Password.TabIndex = 75;
+            this.tb_Current_Password.TabIndex = 2;
             // 
             // frm_Update_User
             // 

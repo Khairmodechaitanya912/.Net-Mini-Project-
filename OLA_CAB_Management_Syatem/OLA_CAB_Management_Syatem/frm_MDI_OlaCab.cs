@@ -18,6 +18,8 @@ namespace OLA_CAB_Management_Syatem
 
         private void bikeToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            pnl_Back_Slider.Hide();
+
             frm_Add_Passenger ap = new frm_Add_Passenger();
 
             ap.MdiParent = this;
@@ -29,6 +31,8 @@ namespace OLA_CAB_Management_Syatem
 
         private void addVehicalToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            pnl_Back_Slider.Hide();
+
             frm_Add_Vehicle av = new frm_Add_Vehicle();
 
             av.MdiParent = this;
@@ -40,6 +44,8 @@ namespace OLA_CAB_Management_Syatem
 
         private void viewVehicalToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            pnl_Back_Slider.Hide();
+
             frm_View_Vehicle vv = new frm_View_Vehicle();
 
             vv.MdiParent = this;
@@ -51,6 +57,8 @@ namespace OLA_CAB_Management_Syatem
 
         private void updateDriverToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            pnl_Back_Slider.Hide();
+
             frm_Update_Driver ur = new frm_Update_Driver();
 
             ur.MdiParent = this;
@@ -62,6 +70,8 @@ namespace OLA_CAB_Management_Syatem
 
         private void viewDriverToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            pnl_Back_Slider.Hide();
+
             frm_View_Driver vd = new frm_View_Driver();
 
             vd.MdiParent = this;
@@ -73,6 +83,8 @@ namespace OLA_CAB_Management_Syatem
 
         private void addAreaToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            pnl_Back_Slider.Hide();
+
             frm_Add_Area aa = new frm_Add_Area();
 
             aa.MdiParent = this;
@@ -84,6 +96,8 @@ namespace OLA_CAB_Management_Syatem
 
         private void updateAreaToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            pnl_Back_Slider.Hide();
+
             frm_Update_Area ua = new frm_Update_Area();
 
             ua.MdiParent = this;
@@ -95,6 +109,8 @@ namespace OLA_CAB_Management_Syatem
 
         private void viewAreaToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            pnl_Back_Slider.Hide();
+
             frm_View_Area va = new frm_View_Area();
 
             va.MdiParent = this;
@@ -106,6 +122,8 @@ namespace OLA_CAB_Management_Syatem
 
         private void addUserToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            pnl_Back_Slider.Hide();
+
             frm_Add_User au = new frm_Add_User();
 
             au.MdiParent = this;
@@ -117,6 +135,8 @@ namespace OLA_CAB_Management_Syatem
 
         private void changePasswordToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            pnl_Back_Slider.Hide();
+
             frm_Update_User uu = new frm_Update_User();
 
             uu.MdiParent = this;
@@ -128,6 +148,8 @@ namespace OLA_CAB_Management_Syatem
 
         private void deleteUserToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            pnl_Back_Slider.Hide();
+
             frm_Delete_User du = new frm_Delete_User();
 
             du.MdiParent = this;
@@ -139,6 +161,8 @@ namespace OLA_CAB_Management_Syatem
 
         private void addDriverToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            pnl_Back_Slider.Hide();
+
             frm_Add_Driver ad = new frm_Add_Driver();
 
             ad.MdiParent = this;
@@ -150,6 +174,8 @@ namespace OLA_CAB_Management_Syatem
 
         private void bikeToolStripMenuItem1_Click(object sender, EventArgs e)
         {
+            pnl_Back_Slider.Hide();
+
             frm_View_Bike_Passenger vbp = new frm_View_Bike_Passenger();
 
             vbp.MdiParent = this;
@@ -161,6 +187,8 @@ namespace OLA_CAB_Management_Syatem
 
         private void carToolStripMenuItem1_Click(object sender, EventArgs e)
         {
+            pnl_Back_Slider.Hide();
+
             frm_View_Car_Passenger vcp = new frm_View_Car_Passenger();
 
             vcp.MdiParent = this;
@@ -172,6 +200,8 @@ namespace OLA_CAB_Management_Syatem
 
         private void carToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            pnl_Back_Slider.Hide();
+
             frm_Add_Passenger_Car acp = new frm_Add_Passenger_Car();
 
             acp.MdiParent = this;
@@ -184,6 +214,27 @@ namespace OLA_CAB_Management_Syatem
         private void frm_MDI_OlaCab_Load(object sender, EventArgs e)
         {
             lbl_User_Logged_In.Text = Global_Vars.Uname;
+
+            if (Global_Vars.User_Role == 1)
+            {
+                customerToolStripMenuItem.Visible = true;
+                vehicalToolStripMenuItem.Visible = true;
+                driverToolStripMenuItem.Visible = true;
+                areaToolStripMenuItem.Visible = true;
+                reportToolStripMenuItem.Visible = true;
+                userManagementToolStripMenuItem.Visible = true;
+            }
+            else
+            {
+                customerToolStripMenuItem.Visible = true;
+                vehicalToolStripMenuItem.Visible = true;
+                driverToolStripMenuItem.Visible = true;
+                areaToolStripMenuItem.Visible = true;
+                reportToolStripMenuItem.Visible = true;
+
+                updateAreaToolStripMenuItem.Visible = false;
+                updateDriverToolStripMenuItem.Visible = false;
+            }
         }
 
         private void btn_Logout_Click(object sender, EventArgs e)
@@ -191,12 +242,39 @@ namespace OLA_CAB_Management_Syatem
             DialogResult Res = MessageBox.Show(" Are You Sure....!!!", "LogOut", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
             if (Res == DialogResult.Yes)
             {
+                customerToolStripMenuItem.Visible = false;
+                vehicalToolStripMenuItem.Visible = false;
+                driverDetailsToolStripMenuItem.Visible = false;
+                areaToolStripMenuItem.Visible = false;
+                reportToolStripMenuItem.Visible = false;
+                userManagementToolStripMenuItem.Visible = false;
+
+                Global_Vars.User_Role = 0;
+
                 frm_Login LF = new frm_Login();
 
                 LF.Show();
 
                 this.Hide();
             }
+        }
+
+        private int imageNumber = 1;
+
+        private void Load_NextImage()
+        {
+            if (imageNumber == 5)
+            {
+                imageNumber = 1;
+            }
+
+            pb_Slider.ImageLocation = string.Format(@"Slider_Images\{0}.jpg", imageNumber);
+            imageNumber++;
+        }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            Load_NextImage();
         }
 
     }

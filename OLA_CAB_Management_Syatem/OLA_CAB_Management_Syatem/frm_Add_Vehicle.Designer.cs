@@ -65,7 +65,7 @@
             this.gb_Add_Vehicle.Controls.Add(this.tb_Name);
             this.gb_Add_Vehicle.Controls.Add(this.tb_Vehicle_Id);
             this.gb_Add_Vehicle.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gb_Add_Vehicle.Location = new System.Drawing.Point(502, 222);
+            this.gb_Add_Vehicle.Location = new System.Drawing.Point(549, 222);
             this.gb_Add_Vehicle.Name = "gb_Add_Vehicle";
             this.gb_Add_Vehicle.Size = new System.Drawing.Size(843, 662);
             this.gb_Add_Vehicle.TabIndex = 0;
@@ -87,7 +87,7 @@
             this.btn_Refresh.Location = new System.Drawing.Point(489, 513);
             this.btn_Refresh.Name = "btn_Refresh";
             this.btn_Refresh.Size = new System.Drawing.Size(208, 59);
-            this.btn_Refresh.TabIndex = 48;
+            this.btn_Refresh.TabIndex = 7;
             this.btn_Refresh.Text = "Refresh";
             this.btn_Refresh.UseVisualStyleBackColor = false;
             this.btn_Refresh.Click += new System.EventHandler(this.btn_Refresh_Click);
@@ -99,7 +99,7 @@
             this.btn_Save.Location = new System.Drawing.Point(145, 513);
             this.btn_Save.Name = "btn_Save";
             this.btn_Save.Size = new System.Drawing.Size(157, 59);
-            this.btn_Save.TabIndex = 47;
+            this.btn_Save.TabIndex = 6;
             this.btn_Save.Text = "Save";
             this.btn_Save.UseVisualStyleBackColor = false;
             this.btn_Save.Click += new System.EventHandler(this.btn_Save_Click);
@@ -115,7 +115,7 @@
             this.cmb_Vehicle_Type.Location = new System.Drawing.Point(454, 392);
             this.cmb_Vehicle_Type.Name = "cmb_Vehicle_Type";
             this.cmb_Vehicle_Type.Size = new System.Drawing.Size(253, 36);
-            this.cmb_Vehicle_Type.TabIndex = 46;
+            this.cmb_Vehicle_Type.TabIndex = 5;
             // 
             // lbl_Vehicle_Type
             // 
@@ -173,7 +173,7 @@
             this.tb_Owner_Name.Location = new System.Drawing.Point(457, 317);
             this.tb_Owner_Name.Name = "tb_Owner_Name";
             this.tb_Owner_Name.Size = new System.Drawing.Size(251, 35);
-            this.tb_Owner_Name.TabIndex = 40;
+            this.tb_Owner_Name.TabIndex = 4;
             this.tb_Owner_Name.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Only_Char);
             // 
             // tb_Vehicle_No
@@ -182,7 +182,7 @@
             this.tb_Vehicle_No.Location = new System.Drawing.Point(456, 246);
             this.tb_Vehicle_No.Name = "tb_Vehicle_No";
             this.tb_Vehicle_No.Size = new System.Drawing.Size(251, 35);
-            this.tb_Vehicle_No.TabIndex = 39;
+            this.tb_Vehicle_No.TabIndex = 3;
             // 
             // tb_Name
             // 
@@ -190,7 +190,7 @@
             this.tb_Name.Location = new System.Drawing.Point(456, 175);
             this.tb_Name.Name = "tb_Name";
             this.tb_Name.Size = new System.Drawing.Size(251, 35);
-            this.tb_Name.TabIndex = 37;
+            this.tb_Name.TabIndex = 2;
             this.tb_Name.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Only_Char);
             // 
             // tb_Vehicle_Id
@@ -200,7 +200,7 @@
             this.tb_Vehicle_Id.Location = new System.Drawing.Point(454, 108);
             this.tb_Vehicle_Id.Name = "tb_Vehicle_Id";
             this.tb_Vehicle_Id.Size = new System.Drawing.Size(251, 35);
-            this.tb_Vehicle_Id.TabIndex = 38;
+            this.tb_Vehicle_Id.TabIndex = 1;
             // 
             // panel1
             // 
@@ -216,7 +216,7 @@
             this.lbl_Header.AutoSize = true;
             this.lbl_Header.Font = new System.Drawing.Font("Malgun Gothic", 50F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_Header.ForeColor = System.Drawing.Color.White;
-            this.lbl_Header.Location = new System.Drawing.Point(668, -9);
+            this.lbl_Header.Location = new System.Drawing.Point(727, -9);
             this.lbl_Header.Name = "lbl_Header";
             this.lbl_Header.Size = new System.Drawing.Size(528, 112);
             this.lbl_Header.TabIndex = 12;

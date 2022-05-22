@@ -66,7 +66,7 @@
             this.lbl_Header.AutoSize = true;
             this.lbl_Header.Font = new System.Drawing.Font("Malgun Gothic", 50F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_Header.ForeColor = System.Drawing.Color.White;
-            this.lbl_Header.Location = new System.Drawing.Point(623, -10);
+            this.lbl_Header.Location = new System.Drawing.Point(754, -10);
             this.lbl_Header.Name = "lbl_Header";
             this.lbl_Header.Size = new System.Drawing.Size(485, 112);
             this.lbl_Header.TabIndex = 12;
@@ -111,10 +111,10 @@
             this.gb_Driver.Controls.Add(this.tb_Name);
             this.gb_Driver.Controls.Add(this.tb_Driver_ID);
             this.gb_Driver.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gb_Driver.Location = new System.Drawing.Point(250, 201);
+            this.gb_Driver.Location = new System.Drawing.Point(309, 168);
             this.gb_Driver.Name = "gb_Driver";
-            this.gb_Driver.Size = new System.Drawing.Size(1455, 809);
-            this.gb_Driver.TabIndex = 49;
+            this.gb_Driver.Size = new System.Drawing.Size(1455, 726);
+            this.gb_Driver.TabIndex = 0;
             this.gb_Driver.TabStop = false;
             this.gb_Driver.Text = "Driver Details";
             // 
@@ -132,18 +132,19 @@
             // 
             this.tb_Pan_No.Font = new System.Drawing.Font("Verdana", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tb_Pan_No.Location = new System.Drawing.Point(1044, 79);
+            this.tb_Pan_No.MaxLength = 14;
             this.tb_Pan_No.Name = "tb_Pan_No";
             this.tb_Pan_No.Size = new System.Drawing.Size(300, 35);
-            this.tb_Pan_No.TabIndex = 73;
+            this.tb_Pan_No.TabIndex = 7;
             // 
             // btn_Refresh
             // 
             this.btn_Refresh.BackColor = System.Drawing.Color.Yellow;
             this.btn_Refresh.Font = new System.Drawing.Font("Verdana", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_Refresh.Location = new System.Drawing.Point(992, 647);
+            this.btn_Refresh.Location = new System.Drawing.Point(992, 613);
             this.btn_Refresh.Name = "btn_Refresh";
             this.btn_Refresh.Size = new System.Drawing.Size(208, 59);
-            this.btn_Refresh.TabIndex = 72;
+            this.btn_Refresh.TabIndex = 14;
             this.btn_Refresh.Text = "Refresh";
             this.btn_Refresh.UseVisualStyleBackColor = false;
             this.btn_Refresh.Click += new System.EventHandler(this.btn_Refresh_Click);
@@ -152,10 +153,10 @@
             // 
             this.btn_Save.BackColor = System.Drawing.Color.Yellow;
             this.btn_Save.Font = new System.Drawing.Font("Verdana", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_Save.Location = new System.Drawing.Point(385, 647);
+            this.btn_Save.Location = new System.Drawing.Point(385, 613);
             this.btn_Save.Name = "btn_Save";
             this.btn_Save.Size = new System.Drawing.Size(157, 59);
-            this.btn_Save.TabIndex = 71;
+            this.btn_Save.TabIndex = 13;
             this.btn_Save.Text = "Save";
             this.btn_Save.UseVisualStyleBackColor = false;
             this.btn_Save.Click += new System.EventHandler(this.btn_Save_Click);
@@ -176,7 +177,8 @@
             this.tb_Charges.Location = new System.Drawing.Point(1044, 488);
             this.tb_Charges.Name = "tb_Charges";
             this.tb_Charges.Size = new System.Drawing.Size(300, 35);
-            this.tb_Charges.TabIndex = 69;
+            this.tb_Charges.TabIndex = 12;
+            this.tb_Charges.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Only_Numerics);
             // 
             // lbl_Licence_No
             // 
@@ -289,7 +291,7 @@
             this.tb_Address.Location = new System.Drawing.Point(1044, 315);
             this.tb_Address.Name = "tb_Address";
             this.tb_Address.Size = new System.Drawing.Size(300, 35);
-            this.tb_Address.TabIndex = 52;
+            this.tb_Address.TabIndex = 10;
             // 
             // tb_Email_ID
             // 
@@ -297,7 +299,7 @@
             this.tb_Email_ID.Location = new System.Drawing.Point(1044, 225);
             this.tb_Email_ID.Name = "tb_Email_ID";
             this.tb_Email_ID.Size = new System.Drawing.Size(300, 35);
-            this.tb_Email_ID.TabIndex = 53;
+            this.tb_Email_ID.TabIndex = 9;
             // 
             // tb_Licence_No
             // 
@@ -305,15 +307,17 @@
             this.tb_Licence_No.Location = new System.Drawing.Point(1044, 150);
             this.tb_Licence_No.Name = "tb_Licence_No";
             this.tb_Licence_No.Size = new System.Drawing.Size(300, 35);
-            this.tb_Licence_No.TabIndex = 51;
+            this.tb_Licence_No.TabIndex = 8;
             // 
             // tb_Aadhar_No
             // 
             this.tb_Aadhar_No.Font = new System.Drawing.Font("Verdana", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tb_Aadhar_No.Location = new System.Drawing.Point(428, 488);
+            this.tb_Aadhar_No.MaxLength = 12;
             this.tb_Aadhar_No.Name = "tb_Aadhar_No";
             this.tb_Aadhar_No.Size = new System.Drawing.Size(310, 35);
-            this.tb_Aadhar_No.TabIndex = 49;
+            this.tb_Aadhar_No.TabIndex = 6;
+            this.tb_Aadhar_No.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Only_Numerics);
             // 
             // tb_Experience
             // 
@@ -321,23 +325,27 @@
             this.tb_Experience.Location = new System.Drawing.Point(1044, 396);
             this.tb_Experience.Name = "tb_Experience";
             this.tb_Experience.Size = new System.Drawing.Size(300, 35);
-            this.tb_Experience.TabIndex = 50;
+            this.tb_Experience.TabIndex = 11;
             // 
             // tb_Alternate_Mobile_No
             // 
             this.tb_Alternate_Mobile_No.Font = new System.Drawing.Font("Verdana", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tb_Alternate_Mobile_No.Location = new System.Drawing.Point(427, 405);
+            this.tb_Alternate_Mobile_No.MaxLength = 10;
             this.tb_Alternate_Mobile_No.Name = "tb_Alternate_Mobile_No";
             this.tb_Alternate_Mobile_No.Size = new System.Drawing.Size(310, 35);
-            this.tb_Alternate_Mobile_No.TabIndex = 57;
+            this.tb_Alternate_Mobile_No.TabIndex = 5;
+            this.tb_Alternate_Mobile_No.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Only_Numerics);
             // 
             // tb_Mobile_No
             // 
             this.tb_Mobile_No.Font = new System.Drawing.Font("Verdana", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tb_Mobile_No.Location = new System.Drawing.Point(427, 318);
+            this.tb_Mobile_No.MaxLength = 10;
             this.tb_Mobile_No.Name = "tb_Mobile_No";
             this.tb_Mobile_No.Size = new System.Drawing.Size(310, 35);
-            this.tb_Mobile_No.TabIndex = 58;
+            this.tb_Mobile_No.TabIndex = 4;
+            this.tb_Mobile_No.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Only_Numerics);
             // 
             // tb_Age
             // 
@@ -345,7 +353,8 @@
             this.tb_Age.Location = new System.Drawing.Point(427, 236);
             this.tb_Age.Name = "tb_Age";
             this.tb_Age.Size = new System.Drawing.Size(310, 35);
-            this.tb_Age.TabIndex = 56;
+            this.tb_Age.TabIndex = 3;
+            this.tb_Age.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Only_Numerics);
             // 
             // tb_Name
             // 
@@ -353,7 +362,8 @@
             this.tb_Name.Location = new System.Drawing.Point(427, 158);
             this.tb_Name.Name = "tb_Name";
             this.tb_Name.Size = new System.Drawing.Size(310, 35);
-            this.tb_Name.TabIndex = 54;
+            this.tb_Name.TabIndex = 2;
+            this.tb_Name.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Only_Char);
             // 
             // tb_Driver_ID
             // 
@@ -362,7 +372,7 @@
             this.tb_Driver_ID.Location = new System.Drawing.Point(425, 79);
             this.tb_Driver_ID.Name = "tb_Driver_ID";
             this.tb_Driver_ID.Size = new System.Drawing.Size(310, 35);
-            this.tb_Driver_ID.TabIndex = 55;
+            this.tb_Driver_ID.TabIndex = 1;
             // 
             // frm_Add_Driver
             // 
